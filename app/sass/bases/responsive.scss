@@ -14,7 +14,26 @@ body{
         margin-bottom: 3rem;
     }
    
-
+    nav{
+        width: 100%;
+        background: none;
+        margin-bottom: 0;
+        position: relative;
+        ul{
+            flex-direction: column;
+            li a{
+                color: $color-text;
+            }
+        }
+        .menu_toogle{
+            padding: 0.3rem 1rem;
+            font-size: 4rem;
+            color: $color-text;
+        }
+        .menu_toogle:hover{
+            color: $color-base;
+        }
+    }
 /*---HEADER---*/
 
     header{
@@ -35,25 +54,7 @@ body{
         .menu_checkbox:checked ~ .menu{
             display: block;
         }
-        nav{
-            width: 100%;
-            background: none;
-            margin-bottom: 0;
-            ul{
-                flex-direction: column;
-                li a{
-                    color: $color-text;
-                }
-            }
-            .menu_toogle{
-                padding: 0.3rem 1rem;
-                font-size: 4rem;
-                color: $color-text;
-            }
-            .menu_toogle:hover{
-                color: $color-base;
-            }
-        }
+       
     }
 
 }
@@ -62,7 +63,7 @@ body{
 /*---ECRANS A PARTIR DE 801PX---*/
 
 @media screen and (min-width:801px){
-    header{
+  
         nav{
             .menu_toogle{
                 display: none;
@@ -70,7 +71,6 @@ body{
             
         }
     }
-}
 
 /*--ECRANS JUSQU'A 1000PX--*/
 
