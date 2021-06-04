@@ -1,0 +1,59 @@
+/*---BODY---*/
+
+body {
+    h1 {
+        color: black;
+        span{
+            color: $color-base;
+        }
+    }
+
+    h2 {
+        color: $color-text;
+    }
+
+    p {
+        color: $color-text;
+    }
+/*---HEADER---*/
+ 
+/*-- sous titre stage--*/
+    .subtitle {
+        color:$color-text;
+    }
+
+    .comp {
+        color: $color-text;
+    }
+
+    .title {
+        color: black;
+    }
+
+}
+
+/*---SECTION PORTFOLIO---*/
+
+#port{
+    .my_port, .b_case{
+        color:$color-text;
+    }
+    .my_port:hover span, .b_case:hover span{
+        display: none;
+    }
+}
+
+/*--FOOTER--*/
+
+footer {
+    p {
+        color: $color-bkgd;
+    }
+
+    em {
+        color: $color-subtitle;
+    }
+    a{
+        color: $color-base;
+    }
+}

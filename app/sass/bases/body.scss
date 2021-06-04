@@ -1,0 +1,316 @@
+
+
+/*-------------------HEADER---------------------------------*/
+
+/*TITRES*/
+header {
+
+    #head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*-----------------SECTION A PROPOS---------------------------*/
+
+#about {
+    
+    .rect{
+        width: 600px;
+        height: 400px;
+        background:$color-base;
+        position: absolute;
+        bottom: -40px;
+        z-index: 1;
+    }
+    .small_rect{
+        width: 300px;
+        height: 15px;
+        background-color: $color-base;
+        position: absolute;
+        bottom: -40px;
+        left:0;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        border-radius: 100%;
+        z-index: 2;
+        box-shadow: 5px 5px 7px $grey;
+        
+        
+    }
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+    }
+
+    #text p {
+        text-align: justify;
+    }
+
+    #cont_about{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+}
+
+/*------------SECTION COMPETENCES-------------*/
+
+#my-comp {
+
+    #html {
+        .yellow {
+            width: 18.75rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 6.25rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+
+    }
+
+    .bar {
+        width: 100%;
+        height: 1rem;
+        display: flex;
+    }
+
+    #css {
+        .yellow {
+            width: 18.75rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 6.25rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #java {
+        .yellow {
+            width: 15.65rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 9.35rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #angular {
+        .yellow {
+            width: 15.65rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 9.35rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #php {
+        .yellow {
+            width: 14rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 11rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #sql {
+        .yellow {
+            width: 16rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 9rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #symfony {
+        .yellow {
+            width: 14rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 11rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #linux {
+        .yellow {
+            width: 14rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 11rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #github {
+        .yellow {
+            width: 16rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 9rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #wordpress {
+        .yellow {
+            width: 18rem;
+            height: 1rem;
+            background-color: $color-text;
+        }
+
+        .grey {
+            width: 7rem;
+            height: 1rem;
+            background-color: $color-base;
+        }
+    }
+
+    #container {
+        display: flex;
+        width: 960px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+   
+    .last_bloc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+/*---------SECTION PORTFOLIO------------------*/
+
+#port {
+
+    #realisations {
+        display: flex;
+        justify-content: space-around;
+        .my_port, .b_case{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center; 
+            border-radius: 7px;
+            span{
+                margin: auto;
+                color:$color-text;
+            } 
+        }
+    }
+}
+
+
+/*------CONTACT-------------------------*/
+#contact {
+    
+    .social a {
+        background-image: url("../../../public/img/social.svg");
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+        transition: all .15s ease-out;
+        border-radius: 100%;
+    }
+
+    .mail {
+        background-position: 0 -80px;
+    }
+
+    .github {
+        background-position: -160px -80px;
+    }
+
+    .linkedin {
+        background-position: -80px -80px;
+    }
+
+    .mail:hover {
+        background-position: 0 0;
+    }
+
+    .github:hover {
+        background-position: -160px 0;
+    }
+
+    .linkedin:hover {
+        background-position: -80px 0;
+    }
+
+    .social a:last-child {
+        margin-right: 0;
+    }
+    #mail{
+        font-family: $police-text;
+        color: $color-text;
+        text-decoration: none;
+    }
+    .social{
+        margin-bottom: 5rem;
+    }
+}
+
+/*-----------FOOTER--------------------*/
+
+footer {
+
+    
+
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0;
+    }
+   
+}

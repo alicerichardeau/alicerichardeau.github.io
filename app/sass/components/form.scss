@@ -1,0 +1,55 @@
+#contact{
+    form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 900px;
+        margin: 2rem auto; 
+        row-gap: 2rem;
+        #msg{
+            grid-column: 1 / 4;
+            grid-row: 4 / 7;
+        }
+        #check{
+            grid-column: 1 / 4;
+            grid-row: 7 / 9;
+            width: 100%;
+            padding: 1rem;
+        }
+        #but{
+            grid-column: 1 / 4;
+            grid-row: 9 / 10; 
+            justify-self: center;
+        }
+        .case{
+            width: 15rem;
+            height: 2rem;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 3px 3px rgb(229,229,229);
+            padding: 0.5rem;
+            
+        }
+        .case::placeholder, textarea::placeholder{
+            font-family: $police-text;  
+            color: lightgrey;
+            padding-left: 1rem;
+        }
+        #name, #surname, #email, #telephone, #object{
+            width: 12.5rem;
+            justify-items: flex-start;
+        }
+        #message{
+            width: 100%;
+        }
+        textarea{
+            border: none;
+            border-radius: 25px;
+            box-shadow: 3px 3px rgb(229,229,229);
+            padding: 0.5rem;
+            height: 20rem;
+        }
+        
+        
+        
+    }
+}

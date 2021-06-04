@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    .h2{
+        padding: 6rem 0;
+        margin: 0;
+    }
+    h1{
+        margin: 0;
+    }
+}
+/*--- SECTION A PROPOS ------*/
+
+#text{
+    padding: 1rem 2rem;
+
+}
+#text p {
+    padding: 0;
+    margin: 0 ;
+}
+
+/*-- SECTION MES COMPETENCES ---*/
+
+#cont_about{
+    width: 960px;
+   margin:0 auto;
+
+}
+#apropos{
+    
+}
+#my-comp{
+    p{
+        margin-bottom: 0.5rem;
+    }
+    margin-top: 2rem;
+}
+.first_comp{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*--SECTION PORTFOLIO--*/
+
+#port{
+    >p{
+        margin-bottom: 5rem;
+    }
+    #realisations{
+        width: 960px;
+        margin: 0 auto;
+    }
+    padding: 0, 1rem;
+}
+
+/*###################################""
+######PAGE BUSINESS CASE################*/
+
+#page_businesscase{
+    p{
+        margin: 3rem 1rem;
+    }
+}

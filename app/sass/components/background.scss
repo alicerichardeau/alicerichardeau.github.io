@@ -1,0 +1,57 @@
+/*---HEADER---*/
+
+header {
+
+    background:linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .3)),url("../../../public/img/bckgd.jpg");
+    height: 600px;
+}
+
+/*---SECTION ABOUT---*/
+
+#text{
+    border-radius: 10px;
+}
+
+/*---SECTION PROTFOLIO---*/
+#port{
+    #realisations{
+        .my_port{
+            width: 400px;
+            height: 200px;
+        }
+        .my_port:hover{
+            background-image: url(../../../public/img/portfolio.png);
+            filter: brightness(70%); 
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .b_case{
+            width: 400px;
+            height: 200px;
+        }
+        .b_case:hover{
+            background-image:url(../../../public/img/business_case.png);
+            filter: brightness(70%);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .b_case, .my_port{
+            background-color: rgba(255, 255, 255, .3); 
+            background-image: none;
+            filter: brightness(100%);
+            box-shadow: 5px 5px 3px $grey;
+            transition: all 1s ease-in-out;
+            
+        }
+        .my_port:hover, .b_case:hover{
+            box-shadow: none;
+           
+        }
+    }
+}
+
+/*--FOOTER--*/
+
+footer{
+    background-color: #444141;
+}

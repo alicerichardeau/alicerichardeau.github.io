@@ -1,0 +1,159 @@
+@media screen and (max-width: 800px){
+
+/*--BODY---*/
+
+body{
+    h1{
+        font-size: 2.5rem;
+        span{
+            font-size: 4rem;
+        }
+    }
+    .title{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+   
+
+/*---HEADER---*/
+
+    header{
+        
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+           
+            font-size: 1rem;
+           
+        }
+        .menu{
+            display: none;
+        }
+        .menu_checkbox:checked ~ .menu{
+            display: block;
+        }
+        nav{
+            width: 100%;
+            background: none;
+            margin-bottom: 0;
+            ul{
+                flex-direction: column;
+                li a{
+                    color: $color-text;
+                }
+            }
+            .menu_toogle{
+                padding: 0.3rem 1rem;
+                font-size: 4rem;
+                color: $color-text;
+            }
+            .menu_toogle:hover{
+                color: $color-base;
+            }
+        }
+    }
+
+}
+}
+
+/*---ECRANS A PARTIR DE 801PX---*/
+
+@media screen and (min-width:801px){
+    header{
+        nav{
+            .menu_toogle{
+                display: none;
+            }
+            
+        }
+    }
+}
+
+/*--ECRANS JUSQU'A 1000PX--*/
+
+@media screen and (max-width: 1000px){
+
+    .h2{
+        font-size: 2rem;
+        margin: 0;
+    }
+
+/*--SECTION ABOUT---*/
+
+#about>div{
+        flex-direction: column;
+        }
+#about{
+    img{
+        margin-top: 2rem 0;
+        border-radius: 100%;
+    }
+    #text{
+        width: 80%;
+        margin-bottom: 5rem;
+        padding: 0 1rem;
+    }
+    #cont_about{
+        width: 100%;
+         align-items: center;
+    }
+    .rect, .small_rect{
+        display: none;
+    }
+}
+/*---SECTION MES COMPETENCES---*/
+
+#my-comp{
+    #container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }
+    input{
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+    .bloc, .last_block{
+        width: 300px;
+    }
+}
+
+    /*---SECTION PORTFOLIO---*/
+
+#port{
+    p{
+         margin-bottom: 4rem;
+    }
+    #realisations{
+        flex-direction: column;
+        max-width: 300px;
+        align-items: center;
+        .my_port, .b_case{
+            max-width: 300px;
+            margin: 2rem 0;
+        }
+    }
+}
+
+/*--SECTION CONTACT--*/
+
+#contact{
+    .social{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/*---FOOTER---*/
+
+footer{
+    p{
+        font-size: .8rem;
+        padding: 1rem;
+    }
+}
+
+}
