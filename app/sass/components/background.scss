@@ -2,7 +2,7 @@
 
 header {
 
-    background:linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .3)),url("../../../public/img/bckgd.jpg");
+    background:linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .3)),url("../../../img/bckgd.jpg");
     height: 600px;
 }
 
@@ -20,7 +20,7 @@ header {
             height: 200px;
         }
         .my_port:hover{
-            background-image: url(../../../public/img/portfolio.png);
+            background-image: url(../../../img/portfolio.png);
             filter: brightness(70%); 
             background-size: cover;
             background-repeat: no-repeat;
@@ -30,7 +30,7 @@ header {
             height: 200px;
         }
         .b_case:hover{
-            background-image:url(../../../public/img/business_case.png);
+            background-image:url(../../../img/business_case.png);
             filter: brightness(70%);
             background-size: cover;
             background-repeat: no-repeat;
