@@ -1,4 +1,4 @@
-header{
+
      nav li a{
     display: block;
     text-transform: uppercase;
@@ -21,7 +21,10 @@ header{
     }
     nav{
         background-color: rgba(10, 10, 10, 0.7) ;
-        margin-bottom: 9rem;
+        position: sticky;
+        top: 0;
+        z-index: 0;
+
         .menu_checkbox{
             opacity:0;
             position: absolute;
@@ -30,4 +33,3 @@ header{
        
         
     }
-}

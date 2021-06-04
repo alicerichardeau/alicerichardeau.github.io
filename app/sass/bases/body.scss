@@ -5,13 +5,11 @@
 /*TITRES*/
 header {
 
-    #head {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
 
 /*-----------------SECTION A PROPOS---------------------------*/
 
@@ -23,7 +21,7 @@ header {
         background:$color-base;
         position: absolute;
         bottom: -40px;
-        z-index: 1;
+        z-index: -2;
     }
     .small_rect{
         width: 300px;
@@ -38,7 +36,7 @@ header {
         height: 300px;
         display: block;
         border-radius: 100%;
-        z-index: 2;
+        z-index: -1;
         box-shadow: 5px 5px 7px $grey;
         
         
@@ -47,7 +45,7 @@ header {
     #text {
         display: flex;
         flex-direction: column;
-        z-index: 3;
+       
     }
 
     #text p {
@@ -296,9 +294,7 @@ header {
         color: $color-text;
         text-decoration: none;
     }
-    .social{
-        margin-bottom: 5rem;
-    }
+   
 }
 
 /*-----------FOOTER--------------------*/

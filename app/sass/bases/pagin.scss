@@ -8,8 +8,19 @@ body{
     }
     h1{
         margin: 0;
+        padding: 0 2rem;
     }
 }
+/*---HEADER---*/
+
+header{
+    h3, h2{
+        padding: 0 2rem;
+    }
+}
+
+
+
 /*--- SECTION A PROPOS ------*/
 
 #text{
@@ -47,13 +58,19 @@ body{
 #port{
     >p{
         margin-bottom: 5rem;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     #realisations{
         width: 960px;
         margin: 0 auto;
     }
     padding: 0, 1rem;
+}
+
+/*--SECTION CONTACT--*/
+
+.social{
+    margin-bottom: 6rem;
 }
 
 /*###################################""
@@ -64,3 +81,6 @@ body{
         margin: 3rem 1rem;
     }
 }
+
+
+
