@@ -4,6 +4,7 @@ header {
 
     background:linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .3)),url("../../../img/bckgd.jpg");
     height: 500px;
+
 }
 
 /*---SECTION ABOUT---*/
@@ -13,6 +14,7 @@ header {
 }
 
 /*---SECTION PROTFOLIO---*/
+
 #port{
     #realisations{
         .my_port{
@@ -40,12 +42,10 @@ header {
             background-image: none;
             filter: brightness(100%);
             box-shadow: 5px 5px 3px $grey;
-            transition: all 1s ease-in-out;
-            
+            transition: all 1s ease-in-out;    
         }
         .my_port:hover, .b_case:hover{
-            box-shadow: none;
-           
+            box-shadow: none;   
         }
     }
 }

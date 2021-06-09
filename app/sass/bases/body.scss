@@ -1,5 +1,4 @@
 
-
 /*-------------------HEADER---------------------------------*/
 
 header {
@@ -38,16 +37,13 @@ header {
         z-index: -1;
         box-shadow: 5px 5px 7px $grey;   
     }
-
     #text {
         display: flex;
         flex-direction: column; 
     }
-
     #text p {
         text-align: justify;
     }
-
     #cont_about{
         display: flex;
         justify-content: center;
@@ -66,7 +62,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 6.25rem;
             height: 1rem;
@@ -79,14 +74,12 @@ header {
         height: 1rem;
         display: flex;
     }
-
     #css {
         .yellow {
             width: 18.75rem;
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 6.25rem;
             height: 1rem;
@@ -100,7 +93,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 9.35rem;
             height: 1rem;
@@ -114,7 +106,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 9.35rem;
             height: 1rem;
@@ -128,7 +119,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 11rem;
             height: 1rem;
@@ -142,7 +132,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 9rem;
             height: 1rem;
@@ -156,7 +145,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 11rem;
             height: 1rem;
@@ -170,7 +158,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 11rem;
             height: 1rem;
@@ -184,7 +171,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 9rem;
             height: 1rem;
@@ -198,7 +184,6 @@ header {
             height: 1rem;
             background-color: $color-text;
         }
-
         .grey {
             width: 7rem;
             height: 1rem;
@@ -212,7 +197,6 @@ header {
         justify-content: space-around;
         margin: 0 auto;
     }
-
    
     .last_bloc{
         display: flex;
@@ -242,8 +226,8 @@ header {
     }
 }
 
-
 /*------CONTACT-------------------------*/
+
 #contact {
     
     .social a {
@@ -255,31 +239,24 @@ header {
         transition: all .15s ease-out;
         border-radius: 100%;
     }
-
     .mail {
         background-position: 0 -80px;
     }
-
     .github {
         background-position: -160px -80px;
     }
-
     .linkedin {
         background-position: -80px -80px;
     }
-
     .mail:hover {
         background-position: 0 0;
     }
-
     .github:hover {
         background-position: -160px 0;
     }
-
     .linkedin:hover {
         background-position: -80px 0;
     }
-
     .social a:last-child {
         margin-right: 0;
     }
@@ -291,16 +268,3 @@ header {
    
 }
 
-/*-----------FOOTER--------------------*/
-
-footer {
-
-    
-
-    p {
-        text-align: center;
-        margin: 0;
-        padding: 2rem 0;
-    }
-   
-}

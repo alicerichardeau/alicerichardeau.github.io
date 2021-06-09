@@ -1,4 +1,5 @@
 #contact{
+
     form{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -26,8 +27,7 @@
             border: none;
             border-radius: 25px;
             box-shadow: 3px 3px rgb(229,229,229);
-            padding: 0.5rem;
-            
+            padding: 0.5rem;   
         }
         .case::placeholder, textarea::placeholder{
             font-family: $police-text;  
@@ -47,9 +47,7 @@
             box-shadow: 3px 3px rgb(229,229,229);
             padding: 0.5rem;
             height: 20rem;
-        }
-        
-        
-        
+        }    
     }
+    
 }

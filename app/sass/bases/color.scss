@@ -7,25 +7,21 @@ body {
             color: $color-base;
         }
     }
-
     h2 {
         color: $color-text;
     }
-
     p {
         color: $color-text;
     }
-/*---HEADER---*/
  
 /*-- sous titre stage--*/
+
     .subtitle {
         color:$color-text;
     }
-
     .comp {
         color: $color-text;
     }
-
     .title {
         color: black;
     }
@@ -43,13 +39,12 @@ body {
     }
 }
 
-/*--FOOTER--*/
+/*--FOOTER--------------*/
 
 footer {
     p {
         color: $color-bkgd;
     }
-
     em {
         color: $color-subtitle;
     }

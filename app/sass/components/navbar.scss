@@ -1,12 +1,12 @@
 
-     nav li a{
+    nav li a{
     display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: $color-subtitle;
     padding: .5rem 2rem;
-    
     }
+
     nav ul{
         display: flex;
         flex-direction: row;
@@ -14,22 +14,20 @@
         justify-content: center;
         margin:0;
         padding: 0;
-
     }
+
     nav ul li a:hover{
         color: $color-base;
     }
+
     nav{
         background-color: rgba(10, 10, 10, 0.7) ;
         position: sticky;
         top: 0;
         z-index: 0;
-
         .menu_checkbox{
             opacity:0;
             position: absolute;
             top: -5000px;
-        }
-       
-        
+        }   
     }

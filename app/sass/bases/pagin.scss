@@ -1,3 +1,5 @@
+/*---BODY---*/
+
 body{
     margin: 0px;
     padding: 0px;
@@ -11,6 +13,7 @@ body{
         padding: 0 2rem;
     }
 }
+
 /*---HEADER---*/
 
 header{
@@ -19,13 +22,10 @@ header{
     }
 }
 
-
-
 /*--- SECTION A PROPOS ------*/
 
 #text{
     padding: 1rem 2rem;
-
 }
 #text p {
     padding: 0;
@@ -37,17 +37,15 @@ header{
 #cont_about{
     width: 960px;
    margin:0 auto;
+}
 
-}
-#apropos{
-    
-}
 #my-comp{
     p{
         margin-bottom: 0.5rem;
     }
     margin-top: 2rem;
 }
+
 .first_comp{
     margin-top: 0;
     padding-top: 0;
@@ -71,6 +69,16 @@ header{
 
 .social{
     margin-bottom: 6rem;
+}
+
+/*-----FOOTER----------*/
+
+footer {
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0;
+    } 
 }
 
 /*###################################""
