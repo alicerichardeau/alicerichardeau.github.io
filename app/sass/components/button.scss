@@ -14,8 +14,7 @@ body{
         background-color: $color-bkgd;
     }
     .butwhite a input:hover{
-        background: $linear;
-        color: $color-subtitle;
+        background-color: $color-subtitle;
         box-shadow: none;
     }
     .butwhite a input:active{
