@@ -36,6 +36,7 @@ header {
         border-radius: 100%;
         z-index: -1;
         box-shadow: 5px 5px 7px $grey;   
+        opacity: 70%;
     }
     #text {
         display: flex;
@@ -60,7 +61,7 @@ header {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
+            background: $linear
         }
     }
 
@@ -73,7 +74,7 @@ header {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
+            background:$linear;
         }
     }
 
@@ -81,64 +82,56 @@ header {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #angular {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #php {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #sql {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #symfony {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;    }
     }
 
     #linux {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #github {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #wordpress {
         .yellow {
             width: 25rem;
             height: 0.5rem;
-            background: linear-gradient( to right,#D54E98, $color-base);
-        }
+            background: $linear;   }
     }
 
     #container {

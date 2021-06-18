@@ -6,11 +6,16 @@ $color-text:#474141;
 $color-bkgd: white;
 $grey: #EEEAED;
 $transparent:#11ffee00;
+$color-linear: #574F54;
 
 
 /*----POLICE----*/
 
 $police-title: 'Nothing You Could do', cursive;
 $police-text: 'Martel Sans', cursive;
+
+/*---COMPONENTS---*/
+
+$linear: linear-gradient( to right,$color-linear , $color-base);
 
 

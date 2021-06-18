@@ -14,12 +14,14 @@ body{
         background-color: $color-bkgd;
     }
     .butwhite a input:hover{
-        background-color: rgba($color-base, $alpha: 0.5);
+        background: $linear;
+        color: $color-subtitle;
+        box-shadow: none;
     }
     .butwhite a input:active{
         transform: translate(0px, 5px);
         box-shadow: none;
-        background-color: rgba($color-base, $alpha: 0.2);
+        background: $linear;
     }
     .butorg input{
         background: linear-gradient($color-bkgd, $color-base);
