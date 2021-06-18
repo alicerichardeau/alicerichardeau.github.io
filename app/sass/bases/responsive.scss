@@ -115,6 +115,9 @@ body{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    .bar{
+        width: 100%;
+    }
     }
     input{
         margin-top: 6rem;
