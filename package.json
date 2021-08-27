@@ -73,7 +73,8 @@
     "posttest": "eslint test",
     "preversion": "npm test",
     "test": "mocha",
-    "version": "npm run gemspec && auto-changelog --commit-limit false --package && git add CHANGELOG.md"
+    "version": "npm run gemspec && auto-changelog --commit-limit false --package && git add CHANGELOG.md",
+    "dev" : "sass app/sass/style.scss style.css --watch --style compressed"
   },
   "style": "sass/_normalize.scss",
   "version": "7.0.1"

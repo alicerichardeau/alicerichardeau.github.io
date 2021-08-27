@@ -26,7 +26,7 @@
             height: 2rem;
             border: none;
             border-radius: 25px;
-            box-shadow: 3px 3px rgb(229,229,229);
+            box-shadow: $box-shadow;
             padding: 0.5rem;   
         }
         .case::placeholder, textarea::placeholder{
@@ -44,7 +44,7 @@
         textarea{
             border: none;
             border-radius: 25px;
-            box-shadow: 3px 3px rgb(229,229,229);
+            box-shadow: $box-shadow;
             padding: 0.5rem;
             height: 20rem;
         }    
