@@ -3,33 +3,42 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta property="og:type" content="website">
+    <meta property ="og:image" content="./img/bckgd.jpg">
+    <meta property="og:title" content="Alice Richardeau, développeuse web et web mobile">
+    <meta name="description" content="Alice Richardeau, développeuse web et web mobile, en recherche de stage. PHP, Javascript, 
+    HTML, CSS, Angular, Symfony, WordPress." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Alice Richardeau</title>
+    <link rel="shortcut icon" href="./img/AR.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
     <div id="bloc_page">
 
         <!--###################### HEADER ###########################################################-->
-        <header><!---->
 
-            <nav>
-                <input id="menu_check"type="checkbox" class="menu_checkbox">
-                <label for="menu_check" class="menu_toogle">&equiv;</label>
-                <ul class="menu">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <input id="menu_check" type="checkbox" class="menu_checkbox">
+            <label for="menu_check" class="menu_toogle">&equiv;</label>
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+
             <div id="head">
                 <h1>Alice<span>.</span>Richardeau</h1>
                 <h3 class="subtitle">En recherche de stage du 02/11/2021 au 11/01/2022 </h3>
                 <h2 class="title">Développeuse Web et Web mobile</h2>
-
             </div>
 
         </header>
@@ -43,14 +52,14 @@
 
                 <!--texte de présentation-->
                 <div id="text">
-                    
+
                     <p>Après une période d'autoformation avec Openclassromm, W3Schools et Grafikart, je suis
                         actuellement en formation chez Human Booster, afin d’obtenir le titre professionnel Développeur
                         Web et Web Mobile.</p>
 
                     <p> Je recherche un stage afin de mettre en pratique tout ce que j’ai pu apprendre et découvrir le
                         métier de développeur en entreprise. </p>
-                    <p>Mes expériences passées m'ont permis d'acquerir organisation, autonomie, et perseverance dans mon
+                    <p>Mes expériences passées m'ont permis d'acquerir organisation, autonomie, et persévérance dans mon
                         travail.</p>
 
                     <p> J'apprecie particulièrement le côté créatif du développement front-end et le côté logique du
@@ -67,7 +76,7 @@
                 <!--photo de profil-->
                 <img src="./img/profil.png" alt="photo de profil" />
             </div>
-            
+
         </section>
 
         <!--###### SECTION COMPETENCES ###################################################################-->
@@ -82,43 +91,29 @@
                     <!--bloc front-end-->
                     <h3 class="first_comp comp">front-end</h3>
                     <p>html</p>
-                    <div id="html" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
                     <p>css</p>
-                    <div id="css" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
                     <p>javascript</p>
-                    <div id="java" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
                     <p>angular</p>
-                    <div id="angular" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
 
                     <!--bloc back-end-->
 
                     <h3 class="comp">back-end</h3>
                     <p>php</p>
-                    <div id="php" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
                     <p>sql</p>
-                    <div id="sql" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
                     <p>symfony</p>
-                    <div id="symfony" class="bar">
-                        <div class="yellow"></div>
-                        <div class="grey"></div>
+                    <div class="bar">
                     </div>
                 </div>
 
@@ -128,29 +123,25 @@
                     <div class="bloc">
                         <h3 class="first_comp comp">divers</h3>
                         <p>linux</p>
-                        <div id="linux" class="bar">
-                            <div class="yellow"></div>
-                            <div class="grey"></div>
+                        <div class="bar">
                         </div>
                         <p>git-hub</p>
-                        <div id="github" class="bar">
-                            <div class="yellow"></div>
-                            <div class="grey"></div>
+                        <div class="bar">
                         </div>
                     </div>
                     <!--bloc cms-->
                     <div class="bloc">
                         <h3 class="comp">cms</h3>
                         <p>wordpress</p>
-                        <div id="wordpress" class="bar">
-                            <div class="yellow"></div>
-                            <div class="grey"></div>
+                        <div class="bar">
+                           
                         </div>
                     </div>
                     <!--lien vers telechargement du cv-->
                     <div class="bloc">
                         <div class="button butwhite">
-                            <a href="./img/cv_alice_richardeau.pdf" target="_blank"><input type="button" value="Télécharger mon CV" /></a>
+                            <a href="./img/alice_richardeau.pdf" target="_blank"><input type="button"
+                                    value="Télécharger mon CV" /></a>
                         </div>
                     </div>
                 </div>
@@ -168,10 +159,10 @@
 
             <div id="realisations">
                 <a href="#" class="my_port">
-                  <span>Portfolio</span>
+                    <span>Portfolio</span>
                 </a>
 
-                <a href="./businesscase.html" class="b_case">
+                <a href="./businesscase.html" class="b_case" target="_blank">
                     <span>Business Case</span>
                 </a>
             </div>
@@ -181,12 +172,12 @@
         <!--####################### SECTION CONTACT ################################################-->
 
         <section id="contact" class="bg-white">
+
             <h2 class="h2" id="contact">Conctactez -moi !</h2>
 
-
-
+        
             <!--EN ATTENTE
-                    <form method="post" action="#">
+            <form method="post" action="#">
                 <div id="name">
                     <label for="nom"></label>
                     <input class="case" type="text" id="nom" name="nom" placeholder="Nom" />
@@ -222,14 +213,15 @@
                 <div id="but" class="button butorg">
                     <input type="button" value="Envoyer">
                 </div>
-            </form>-->
-
+            </form>
+            -->
             <div class="social">
-                <a href="mailto:alicerichardeau@outlook.com" class="mail"></a>
-                <a href="https://github.com/alrich-456" class="github"></a>
-                <a href="https://www.linkedin.com/in/alice-richardeau-36735720b/" class="linkedin"></a>
+                <a href="mailto:alicerichardeau@outlook.com" class="mail" target="_blank"></a>
+                <a href="https://github.com/alicerichardeau" class="github" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/alice-richardeau-36735720b/" class="linkedin" target="_blank"></a>
             </div>
     </div>
+
     </section>
 
     </div>
@@ -238,9 +230,9 @@
 
     <footer>
 
-
-
-        <p> <a href="mailto:alicerichardeau@outlook.com" class="mail">alicerichardeau@outlook.com</a> © 2021 Alice RICHARDEAU, Tous droits réservés.</p>
+        <p> <a href="mailto:alicerichardeau@outlook.com" class="mail">alicerichardeau@outlook.com</a> © 2021 Alice
+            RICHARDEAU, Tous droits réservés.</p>
+            
     </footer>
 </body>
 </hhtml>

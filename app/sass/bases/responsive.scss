@@ -5,6 +5,7 @@
 body{
     h1{
         font-size: 2.5rem;
+        margin-top: 2rem;
         span{
             font-size: 4rem;
         }
@@ -13,21 +14,43 @@ body{
         font-size: 1.5rem;
         margin-bottom: 3rem;
     }
-   
+    nav{
+        width: 100%;
+        margin-bottom: 0;
+        position: relative;
+        ul{
+            flex-direction: column;
+        }
+        li:last-child{
+            padding-bottom: 2rem;
+        }
+        .menu_toogle{
+            padding: 0.3rem 1rem;
+            font-size: 3rem;
+            color: rgb(230, 230, 233);
+        }
+        .menu_toogle:hover{
+            color: $color-base;
+        }
+        .menu {
+            display: none;
+        }
+        .menu_checkbox:checked ~ .menu {
+            display: block;
+        }
+    }
 
 /*---HEADER---*/
 
     header{
-        
+
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2{
-           
-            font-size: 1rem;
-           
+        h2{ 
+            font-size: 1rem; 
         }
         .menu{
             display: none;
@@ -35,25 +58,7 @@ body{
         .menu_checkbox:checked ~ .menu{
             display: block;
         }
-        nav{
-            width: 100%;
-            background: none;
-            margin-bottom: 0;
-            ul{
-                flex-direction: column;
-                li a{
-                    color: $color-text;
-                }
-            }
-            .menu_toogle{
-                padding: 0.3rem 1rem;
-                font-size: 4rem;
-                color: $color-text;
-            }
-            .menu_toogle:hover{
-                color: $color-base;
-            }
-        }
+    
     }
 
 }
@@ -62,13 +67,11 @@ body{
 /*---ECRANS A PARTIR DE 801PX---*/
 
 @media screen and (min-width:801px){
-    header{
-        nav{
-            .menu_toogle{
+  
+    nav{
+        .menu_toogle{
                 display: none;
-            }
-            
-        }
+        }    
     }
 }
 
@@ -104,6 +107,7 @@ body{
         display: none;
     }
 }
+
 /*---SECTION MES COMPETENCES---*/
 
 #my-comp{
@@ -111,6 +115,9 @@ body{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    .bar{
+        width: 100%;
+    }
     }
     input{
         margin-top: 6rem;
@@ -142,8 +149,7 @@ body{
 
 #contact{
     .social{
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
     }
 }
 

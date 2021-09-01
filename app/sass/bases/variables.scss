@@ -1,16 +1,24 @@
 /*----COLORS----*/
 
 $color-base:#F7DAED ;
-$color-subtitle: #F5F2F7;
+$color-subtitle:#EEE7EC ;
 $color-text:#474141;
 $color-bkgd: white;
 $grey: #EEEAED;
 $transparent:#11ffee00;
+$color-linear: #574F54;
+$box-shadow: rgb(121 121 121 / 35%) 1px 10px 20px;
+
+
 
 
 /*----POLICE----*/
 
 $police-title: 'Nothing You Could do', cursive;
 $police-text: 'Martel Sans', cursive;
+
+/*---COMPONENTS---*/
+
+$linear: linear-gradient( to right,$color-linear , $color-base);
 
 

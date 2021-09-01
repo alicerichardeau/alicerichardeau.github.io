@@ -1,6 +1,6 @@
 
-
 body{
+
     .button input{
         font-family: $police-text;
         font-size: 1rem;
@@ -10,16 +10,17 @@ body{
         border: none;
     }
     .butwhite a input{
-        box-shadow: 3px 3px rgb(229, 229, 229);
+        box-shadow: $box-shadow;
         background-color: $color-bkgd;
     }
     .butwhite a input:hover{
-        background-color: rgba($color-base, $alpha: 0.5);
+        border: 1px solid $grey;
+        box-shadow: none;
     }
     .butwhite a input:active{
         transform: translate(0px, 5px);
         box-shadow: none;
-        background-color: rgba($color-base, $alpha: 0.2);
+        background: $linear;
     }
     .butorg input{
         background: linear-gradient($color-bkgd, $color-base);
