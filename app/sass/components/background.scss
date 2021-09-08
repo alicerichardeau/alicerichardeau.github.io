@@ -31,9 +31,6 @@ header {
         }
         .my_port:hover{
             background-image: url(../../../img/portfolio.png);
-            filter: brightness(70%); 
-            background-size: cover;
-            background-repeat: no-repeat;
         }
         .b_case{
             width: 400px;
@@ -41,9 +38,6 @@ header {
         }
         .b_case:hover{
             background-image:url(../../../img/business_case.png);
-            filter: brightness(70%);
-            background-size: cover;
-            background-repeat: no-repeat;
         }
         .b_case, .my_port{
             background-color: rgba(255, 255, 255, .3); 
@@ -53,7 +47,11 @@ header {
             transition: all 1s ease-in-out;    
         }
         .my_port:hover, .b_case:hover{
-            box-shadow: none;   
+            box-shadow: none;  
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            filter: brightness(70%); 
         }
     }
 }
