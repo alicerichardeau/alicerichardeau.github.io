@@ -1,14 +1,14 @@
 /*---BODY---*/
 
-#body{
+body{
     margin: 0px;
     padding: 0px;
     text-align: center;
     box-sizing: border-box;
-    overflow-x: hidden;
     .h2{
         padding: 6rem 0;
         margin: 0;
+        display: inline-block;
     }
     h1{
         margin: 0;
