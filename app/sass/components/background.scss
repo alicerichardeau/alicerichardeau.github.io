@@ -29,29 +29,19 @@ header {
             width: 400px;
             height: 200px;
         }
-        .my_port:hover{
-            background-image: url(../../../img/portfolio.png);
-        }
         .b_case{
             width: 400px;
             height: 200px;
         }
-        .b_case:hover{
-            background-image:url(../../../img/business_case.png);
-        }
         .b_case, .my_port{
             background-color: rgba(255, 255, 255, .3); 
-            background-image: none;
-            filter: brightness(100%);
             box-shadow: $box-shadow;
-            transition: all 1s ease-in-out;    
+            //transition: all 1s ease-in-out;    
         }
         .my_port:hover, .b_case:hover{
             box-shadow: none;  
-            background-size: cover;
-            background-repeat: no-repeat;
             z-index: -1;
-            filter: brightness(70%); 
+            border: $border-box;
         }
     }
 }
