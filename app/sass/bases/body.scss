@@ -30,13 +30,14 @@ header {
         left:0;
     }
     img {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 200px;
         display: block;
         border-radius: 100%;
         z-index: -1;
         box-shadow: $box-shadow;   
         opacity: 70%;
+        padding: 3rem;
     }
     #text {
         display: flex;
