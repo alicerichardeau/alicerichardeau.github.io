@@ -1,7 +1,8 @@
 /*---BODY---*/
 
 body{
-
+#bloc_page {
+    
     font-family:  $police-text;
     h1, h2{
     font-family: $police-title;
@@ -24,7 +25,6 @@ body{
     }
 
     /*sous-titre du header*/
-
     .title{
         font-family: $police-text;
         font-size: 2rem;
@@ -40,13 +40,13 @@ body{
 }
 
 /*---SECTION ABOUT---*/
-
 #about{
     #text{
         p:first-child::first-letter{
             font-family: $police-title;
             font-weight: bold;
             font-size: 2rem;
+            color: $color-base;
         }
     }
 }
@@ -82,4 +82,5 @@ footer{
         text-decoration: none;
         font-style: italic;
     }
+}
 }

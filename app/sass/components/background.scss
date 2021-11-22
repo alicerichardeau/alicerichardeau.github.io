@@ -2,8 +2,7 @@
 
 header {
 
-    background:linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .3)),url("../../../img/bckgd.jpg");
-    height: 500px;
+    background:$color-bkgd;
 
 }
 
@@ -22,26 +21,23 @@ header {
 }
 
 /*---SECTION PROTFOLIO---*/
-
 #port{
     #realisations{
-        .my_port{
-            width: 400px;
-            height: 200px;
+        .my_port, .b_case{
+            width: 320px;
+            height: 170px;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
-        .b_case{
-            width: 400px;
-            height: 200px;
+        .b_case {
+            background-image: url('../../../img/preview-business-case.png');         
         }
-        .b_case, .my_port{
-            background-color: rgba(255, 255, 255, .3); 
-            box-shadow: $box-shadow;
-            //transition: all 1s ease-in-out;    
+        .my_port {
+            background-image: url('../../../img/preview-portfolio.png');
         }
-        .my_port:hover, .b_case:hover{
-            box-shadow: none;  
-            z-index: -1;
-            border: $border-box;
+        .my_port:hover, .b_case:hover {
+            background-image: none;
+            background-color: #B3176F;
         }
     }
 }
@@ -49,5 +45,5 @@ header {
 /*--FOOTER--*/
 
 footer{
-    background-color: #444141;
+    background-color: $color-bkgd;
 }

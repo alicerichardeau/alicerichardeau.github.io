@@ -6,16 +6,14 @@ body{
         font-size: 1rem;
         color:$color-text;
         padding: 1rem 2rem;
-        border-radius: 7px;
+        border-radius: 3px;
         border: none;
     }
     .butwhite a input{
-        box-shadow: $box-shadow;
         background-color: $color-bkgd;
     }
     .butwhite a input:hover{
         border: 1px solid $grey;
-        box-shadow: none;
     }
     .butwhite a input:active{
         transform: translate(0px, 5px);

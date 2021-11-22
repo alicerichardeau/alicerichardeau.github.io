@@ -1,165 +1,190 @@
-@media screen and (max-width: 800px){
+body {
+    #bloc_page {
+         //  ECRANS JUSQU'A 380 PX
+        // #########################
+        @media screen and (max-width: 380px) {
+            h1 {
+                font-size: 1.8rem!important;
+            }
+        }
 
-/*--BODY---*/
+        // JUSQU'A 800PX
+        // ################
+        @media screen and (max-width: 800px) {
+            header {
+                height: 300px;
 
-body{
-    h1{
-        font-size: 2.5rem;
-        margin-top: 2rem;
-        span{
-            font-size: 4rem;
+                h1 {
+                    font-size: 2.5rem;
+                    margin-top: 2rem;
+
+                    span {
+                        font-size: 4rem;
+                    }
+                }
+
+                .title {
+                    font-size: 1.5rem;
+                    margin-bottom: 3rem;
+                }
+            }
+
+            nav {
+                width: 100%;
+                margin-bottom: 0;
+                position: relative;
+
+                ul {
+                    flex-direction: column;
+                }
+
+                li:last-child {
+                    padding-bottom: 2rem;
+                }
+
+                .menu_toogle {
+                    padding: 0.3rem 1rem;
+                    font-size: 3rem;
+                    color: $color-base;
+                }
+
+                .menu_toogle:hover {
+                    color: white;
+                }
+
+                .menu {
+                    display: none;
+                }
+
+                .menu_checkbox:checked~.menu {
+                    display: block;
+                }
+            }
+
+            /*---HEADER---*/
+            header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 1rem;
+                }
+
+                .menu {
+                    display: none;
+                }
+
+                .menu_checkbox:checked~.menu {
+                    display: block;
+                }
+            }
+        }
+
+
+        /*---ECRANS A PARTIR DE 801PX---*/
+        // ###############################
+        @media screen and (min-width:801px) {
+            nav {
+                .menu_toogle {
+                    display: none;
+                }
+            }
+        }
+
+        /*--ECRANS JUSQU'A 1000PX--*/
+        // ############################
+        @media screen and (max-width: 1000px) {
+            .h2 {
+                font-size: 2rem;
+                padding: 2rem 0;
+            }
+
+            /*--SECTION ABOUT---*/
+            #about>div {
+                flex-direction: column;
+            }
+
+            #about {
+                #cont_about {
+                    flex-direction: column;
+
+                    img {
+                        margin-top: 2rem;
+                    }
+                }
+
+                .rect,
+                .small_rect {
+                    display: none;
+                }
+            }
+
+            /*---SECTION MES COMPETENCES---*/
+            #my-comp {
+                #container {
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+
+                    .bar {
+                        width: 100%;
+                    }
+                }
+
+                input {
+                    margin-top: 6rem;
+                    margin-bottom: 2rem;
+                }
+
+                .bloc,
+                .last_block {
+                    width: 300px;
+                }
+            }
+            /*---SECTION PORTFOLIO---*/
+            #port {
+                margin-top: 2rem;
+                p {
+                    padding-bottom: 2rem;
+                }
+                #realisations {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .my_port,
+                    .b_case {
+                        margin: 2rem 0;
+                    }
+                }
+            }
+
+            /*--SECTION CONTACT--*/
+            #contact {
+                margin-top: 2rem;
+                .social {
+                    margin-bottom: 4rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            /*---FOOTER---*/
+            footer {
+                p {
+                    font-size: .8rem;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        //  ECRANS JUSQU'A 460 PX
+        // #########################
+        @media screen and (max-width: 460px) {
+
+            .title {
+                font-size: 1rem;
+            }
         }
     }
-    .title{
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-    }
-    nav{
-        width: 100%;
-        margin-bottom: 0;
-        position: relative;
-        ul{
-            flex-direction: column;
-        }
-        li:last-child{
-            padding-bottom: 2rem;
-        }
-        .menu_toogle{
-            padding: 0.3rem 1rem;
-            font-size: 3rem;
-            color: rgb(230, 230, 233);
-        }
-        .menu_toogle:hover{
-            color: $color-base;
-        }
-        .menu {
-            display: none;
-        }
-        .menu_checkbox:checked ~ .menu {
-            display: block;
-        }
-    }
-
-/*---HEADER---*/
-
-    header{
-
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2{ 
-            font-size: 1rem; 
-        }
-        .menu{
-            display: none;
-        }
-        .menu_checkbox:checked ~ .menu{
-            display: block;
-        }
-    
-    }
-
-}
-}
-
-/*---ECRANS A PARTIR DE 801PX---*/
-
-@media screen and (min-width:801px){
-  
-    nav{
-        .menu_toogle{
-                display: none;
-        }    
-    }
-}
-
-/*--ECRANS JUSQU'A 1000PX--*/
-
-@media screen and (max-width: 1000px){
-
-    .h2{
-        font-size: 2rem;
-        margin: 0;
-    }
-
-/*--SECTION ABOUT---*/
-
-#about>div{
-        flex-direction: column;
-        }
-#about{
-    img{
-        margin-top: 2rem 0;
-        border-radius: 100%;
-    }
-    #text{
-        width: 80%;
-        margin-bottom: 5rem;
-        padding: 0 1rem;
-    }
-    #cont_about{
-        width: 100%;
-         align-items: center;
-    }
-    .rect, .small_rect{
-        display: none;
-    }
-}
-
-/*---SECTION MES COMPETENCES---*/
-
-#my-comp{
-    #container{
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    .bar{
-        width: 100%;
-    }
-    }
-    input{
-        margin-top: 6rem;
-        margin-bottom: 2rem;
-    }
-    .bloc, .last_block{
-        width: 300px;
-    }
-}
-
-    /*---SECTION PORTFOLIO---*/
-
-#port{
-    p{
-         margin-bottom: 4rem;
-    }
-    #realisations{
-        flex-direction: column;
-        max-width: 300px;
-        align-items: center;
-        .my_port, .b_case{
-            max-width: 300px;
-            margin: 2rem 0;
-        }
-    }
-}
-
-/*--SECTION CONTACT--*/
-
-#contact{
-    .social{
-        margin-bottom: 6rem;
-    }
-}
-
-/*---FOOTER---*/
-
-footer{
-    p{
-        font-size: .8rem;
-        padding: 1rem;
-    }
-}
-
 }
