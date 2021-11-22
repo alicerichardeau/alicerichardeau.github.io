@@ -1,36 +1,36 @@
 /*---BODY---*/
 
-body{
+body {
 #bloc_page {
     
     font-family:  $police-text;
-    h1, h2{
+    h1, h2 {
     font-family: $police-title;
     }
-    h1{
+    h1 {
         font-size: 5rem;
-        span{
+        span {
             font-size: 7rem;
         }
     }
-    h2{
+    h2 {
         font-size: 3rem;
     }
-    .h2:hover{
+    .h2:hover {
         transform: scale(1.1);
     }
-    p{
+    p {
         font-size: 16px;
         font-family: $police-text;
     }
 
     /*sous-titre du header*/
-    .title{
+    .title {
         font-family: $police-text;
         font-size: 2rem;
         font-weight: normal;
     }
-    .subtitle{
+    .subtitle {
         font-family: $police-text;
         font-size: 1rem;
         font-style: italic;
@@ -40,9 +40,9 @@ body{
 }
 
 /*---SECTION ABOUT---*/
-#about{
-    #text{
-        p:first-child::first-letter{
+#about {
+    #text {
+        p:first-child::first-letter {
             font-family: $police-title;
             font-weight: bold;
             font-size: 2rem;
@@ -52,9 +52,8 @@ body{
 }
 
 /*---SECTION MES COMPETENCES---*/
-
-#my-comp{
-    .comp{
+#my-comp {
+    .comp {
         font-size: 1rem;
         text-transform: uppercase;
         padding-top: 2rem;
@@ -62,13 +61,12 @@ body{
 }
 
 /*---SECTION PORTFOLIO---*/
-
-#port{
-    #realisations{
-        a{
+#port {
+    #realisations {
+        a {
             text-decoration: none;
         }
-        span{
+        span {
             text-transform: uppercase;
             font-size: 2.5rem;
         }
@@ -76,11 +74,17 @@ body{
 }
 
 /*---FOOTER---*/
-
-footer{
-    a{
+footer {
+    a {
         text-decoration: none;
         font-style: italic;
     }
 }
+}
+// PAGE BUSINESS CASE
+// ####################
+#page_businesscase {
+    h1 {
+        font-family: $police-title;
+    }
 }
