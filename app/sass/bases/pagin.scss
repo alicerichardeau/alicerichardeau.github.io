@@ -3,17 +3,20 @@
 body {
     margin: 0;
     padding: 0;
+
     #bloc_page {
         width: 100%;
         margin: 0px;
         padding: 0px;
         text-align: center;
         box-sizing: border-box;
+
         .h2 {
             padding: 4rem 0;
             margin: 0;
             display: inline-block;
         }
+
         h1 {
             margin: 0;
             padding: 0 2rem;
@@ -27,28 +30,36 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     h3,
     h2 {
         padding: 0 2rem;
     }
+
     #head {
         width: 100%;
     }
 }
 
 /*--- SECTION A PROPOS ------*/
-#text {
-    padding: 1rem;
-    max-width: 750px;
-}
+#about {
+    #apropos {
+        margin-top: 3rem;
+    }
 
-#text p {
-    padding: 0;
-    margin: 0;
-}
+    #text {
+        padding: 1rem;
+        max-width: 750px;
+    }
 
-#cont_about {
-    margin: 0 2rem;
+    #text p {
+        padding: 0;
+        margin: 0;
+    }
+
+    #cont_about {
+        margin: 0 2rem;
+    }
 }
 
 /*-- SECTION MES COMPETENCES ---*/
@@ -56,9 +67,11 @@ header {
     #container {
         max-width: 960px;
     }
+
     p {
         margin-bottom: 0.5rem;
     }
+
     margin-top: 2rem;
 }
 
@@ -71,15 +84,19 @@ header {
 #port {
 
     margin-top: 4rem;
+
     p {
         padding-bottom: 4rem;
     }
+
     #realisations {
         max-width: 960px;
         margin: 0 auto;
+
         h3 {
             margin-top: 0;
         }
+
         .b_case,
         .my_port {
             display: flex;
@@ -87,8 +104,8 @@ header {
             align-items: center;
         }
     }
-    padding: 0
-    1rem;
+
+    padding: 0 1rem;
 }
 
 /*--SECTION CONTACT--*/
@@ -99,12 +116,14 @@ header {
 /*-----FOOTER----------*/
 footer {
     width: 100%;
+
     p {
         text-align: center;
         margin: 0;
         padding: 2rem 0;
     }
 }
+
 
 /*###################################""
 ######PAGE BUSINESS CASE################*/
