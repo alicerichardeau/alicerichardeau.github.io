@@ -1,15 +1,14 @@
 body {
     #bloc_page {
-         //  ECRANS JUSQU'A 380 PX
-        // #########################
+
+        //  SCREENS UP TO 380 PX
         @media screen and (max-width: 380px) {
             h1 {
-                font-size: 1.8rem!important;
+                font-size: 1.8rem !important;
             }
         }
 
-        // JUSQU'A 800PX
-        // ################
+        // SCREENS UP TO 800 PX
         @media screen and (max-width: 800px) {
             header {
                 height: 300px;
@@ -61,7 +60,7 @@ body {
                 }
             }
 
-            /*---HEADER---*/
+            // HEADER
             header {
                 display: flex;
                 flex-direction: column;
@@ -82,10 +81,8 @@ body {
             }
         }
 
-
-        /*---ECRANS A PARTIR DE 801PX---*/
-        // ###############################
-        @media screen and (min-width:801px) {
+        // SCREEN FROM 800 PX
+        @media screen and (min-width:800px) {
             nav {
                 .menu_toogle {
                     display: none;
@@ -93,15 +90,14 @@ body {
             }
         }
 
-        /*--ECRANS JUSQU'A 1000PX--*/
-        // ############################
+        // SCREENS UP TO 1000 PX
         @media screen and (max-width: 1000px) {
             .h2 {
                 font-size: 2rem;
                 padding: 2rem 0;
             }
 
-            /*--SECTION ABOUT---*/
+            // ABOUT
             #about>div {
                 flex-direction: column;
             }
@@ -121,7 +117,7 @@ body {
                 }
             }
 
-            /*---SECTION MES COMPETENCES---*/
+            // COMPETENCES
             #my-comp {
                 #container {
                     flex-direction: column;
@@ -143,12 +139,15 @@ body {
                     width: 300px;
                 }
             }
-            /*---SECTION PORTFOLIO---*/
+
+            // PORTFOLIO
             #port {
                 margin-top: 2rem;
+
                 p {
                     padding-bottom: 2rem;
                 }
+
                 #realisations {
                     flex-direction: column;
                     align-items: center;
@@ -159,15 +158,18 @@ body {
                     }
                 }
             }
-            /*--SECTION CONTACT--*/
+
+            // CONTACT
             #contact {
                 margin-top: 1rem;
+
                 .social {
                     margin-bottom: 4rem;
                     margin-top: 1rem;
                 }
             }
-            /*---FOOTER---*/
+
+            // FOOTER
             footer {
                 p {
                     font-size: .8rem;
@@ -176,8 +178,7 @@ body {
             }
         }
 
-        //  ECRANS JUSQU'A 460 PX
-        // #########################
+        //  SCREENS UP TO 460 PX
         @media screen and (max-width: 460px) {
 
             .title {

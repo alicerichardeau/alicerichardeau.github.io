@@ -1,203 +1,212 @@
 body {
-    /*-------------------HEADER---------------------------------*/
-    // ###########################################################
-          $bubble-count: 50;
-          $sway-type: "sway-left-to-right", "sway-right-to-left";
-          
-          @function random_range($min, $max) {
-            $rand: random();
-            $random_range: $min + floor($rand * (($max - $min) + 1));
-            @return $random_range;
-          }  
-          @function sample($list) {
-            @return nth($list, random(length($list)));
-          }  
-          .bubbles {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-          }  
-          .bubble {
-            position: absolute;
-            left: var(--bubble-left-offset);
-            bottom: -75%;
-            display: block;
-            width: var(--bubble-radius);
-            height: var(--bubble-radius);
-            border-radius: 50%;
-            animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;         
-            &::before {
-              position: absolute;
-              content: '';
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background: hsla(311, 49%, 85%, 0.3);
-              border-radius: inherit;
-              animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
-            }         
-            @for $i from 0 through $bubble-count {
-              &:nth-child(#{$i}) {
-                --bubble-left-offset: #{random_range(0vw, 100vw)};
-                --bubble-radius: #{random_range(1vw, 10vw)};
-                --bubble-float-duration: #{random_range(6s, 12s)};
-                --bubble-sway-duration: #{random_range(4s, 6s)};
-                --bubble-float-delay: #{random_range(0s, 4s)};
-                --bubble-sway-delay: #{random_range(0s, 4s)};
-                --bubble-sway-type: #{sample($sway-type)};
-              }
-            }
-          }        
-          @keyframes float-up {
-            to {
-              transform: translateY(-175vh);
-            }
-          }          
-          @keyframes sway-left-to-right {
-            from {
-              transform: translateX(-100%);
-            }          
-            to {
-              transform: translateX(100%);
-            }
-          }         
-          @keyframes sway-right-to-left {
-            from {
-              transform: translateX(100%);
-            }          
-            to {
-              transform: translateX(-100%);
-            }
-          }
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  // HEADER
+  // BUBBLES ANIMATION
+  $bubble-count: 50;
+  $sway-type: "sway-left-to-right", "sway-right-to-left";
 
-    /*-----------------SECTION A PROPOS---------------------------*/
-    // ############################################################
-    #about {
-        .rect {
-            width: 600px;
-            height: 400px;
-            background: $color-base;
-            position: absolute;
-            bottom: -40px;
-            z-index: -2;
-        }
-        .small_rect {
-            width: 300px;
-            height: 15px;
-            background-color: $color-base;
-            position: absolute;
-            bottom: -40px;
-            left: 0;
-        }
-        img {
-            width: 150px;
-            height: 200px;
-            display: block;
-            border-radius: 100%;
-            z-index: -1;
-            background-color: $color-bkgd;
-            opacity: 70%;
-            margin: 2rem;
-            margin-right: 1rem;
-            padding: 2rem;
-        }
-        #text {
-            display: flex;
-            flex-direction: column;
-        }
-        #text p {
-            text-align: justify;
-        }
-        #cont_about {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  @function random_range($min, $max) {
+    $rand: random();
+    $random_range: $min + floor($rand * (($max - $min) + 1));
+    @return $random_range;
+  }
+
+  @function sample($list) {
+    @return nth($list, random(length($list)));
+  }
+
+  .bubbles {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .bubble {
+    position: absolute;
+    left: var(--bubble-left-offset);
+    bottom: -75%;
+    display: block;
+    width: var(--bubble-radius);
+    height: var(--bubble-radius);
+    border-radius: 50%;
+    animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: hsla(311, 49%, 85%, 0.3);
+      border-radius: inherit;
+      animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
     }
 
-    /*------------SECTION COMPETENCES-------------*/
-    // ############################################
-    #my-comp {
-        .bar {
-            width: 25rem;
-            height: 0.5rem;
-            display: flex;
-            background: $linear;
-        }
-        #container {
-            display: flex;
-            justify-content: space-around;
-            margin: 0 auto;
-        }
-        .last_bloc {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    @for $i from 0 through $bubble-count {
+      &:nth-child(#{$i}) {
+        --bubble-left-offset: #{random_range(0vw, 100vw)};
+        --bubble-radius: #{random_range(1vw, 10vw)};
+        --bubble-float-duration: #{random_range(6s, 12s)};
+        --bubble-sway-duration: #{random_range(4s, 6s)};
+        --bubble-float-delay: #{random_range(0s, 4s)};
+        --bubble-sway-delay: #{random_range(0s, 4s)};
+        --bubble-sway-type: #{sample($sway-type)};
+      }
+    }
+  }
+
+  @keyframes float-up {
+    to {
+      transform: translateY(-175vh);
+    }
+  }
+
+  @keyframes sway-left-to-right {
+    from {
+      transform: translateX(-100%);
     }
 
-    /*---------SECTION PORTFOLIO------------------*/
-    // #############################################
-    #port {
-        #realisations {
-            display: flex;
-            justify-content: space-around;
-            .hidden {
-                display: none;
-            }
-            .my_port:hover .hidden, .b_case:hover .hidden {
-                display: block;
-                color: $color-text;
-            }
-            .my_port, .b_case {
-                border-radius: 3px;
-            }
-        }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes sway-right-to-left {
+    from {
+      transform: translateX(100%);
     }
 
-    /*------CONTACT-------------------------*/
-    // ########################################
-    #contact {
-        .social a {
-            background-image: url("../../../img/social.svg");
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-            transition: all .15s ease-out;
-            border-radius: 100%;
-        }
-        .mail {
-            background-position: 0 -50px;
-        }
-        .github {
-            background-position: -100px -50px;
-        }
-        .linkedin {
-            background-position: -50px -50px;
-        }
-        .mail:hover {
-            background-position: 0 0;
-        }
-        .github:hover {
-            background-position: -100px 0;
-        }
-        .linkedin:hover {
-            background-position: -50px 0;
-        }
-        .social a:last-child {
-            margin-right: 0;
-        }
-        #mail {
-            font-family: $police-text;
-            color: $color-text;
-            text-decoration: none;
-        }
+    to {
+      transform: translateX(-100%);
     }
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // ABOUT
+  #about {
+    img {
+      width: 150px;
+      height: 200px;
+      display: block;
+      border-radius: 100%;
+      z-index: -1;
+      background-color: $color-bkgd;
+      opacity: 70%;
+      margin: 2rem;
+      margin-right: 1rem;
+      padding: 2rem;
+    }
+
+    #text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #text p {
+      text-align: justify;
+    }
+
+    #cont_about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // COMPETENCES
+  #my-comp {
+    .bar {
+      width: 25rem;
+      height: 0.5rem;
+      display: flex;
+      background: $linear;
+    }
+
+    #container {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
+
+    .last_bloc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  // PORTFOLIO
+  #port {
+    #realisations {
+      display: flex;
+      justify-content: space-around;
+
+      .hidden {
+        display: none;
+      }
+
+      .my_port:hover .hidden,
+      .b_case:hover .hidden {
+        display: block;
+        color: $color-text;
+      }
+
+      .my_port,
+      .b_case {
+        border-radius: 3px;
+      }
+    }
+  }
+
+  // CONTACT
+  #contact {
+    .social a {
+      background-image: url("../../../img/social.svg");
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+      transition: all .15s ease-out;
+      border-radius: 100%;
+    }
+
+    .mail {
+      background-position: 0 -50px;
+    }
+
+    .github {
+      background-position: -100px -50px;
+    }
+
+    .linkedin {
+      background-position: -50px -50px;
+    }
+
+    .mail:hover {
+      background-position: 0 0;
+    }
+
+    .github:hover {
+      background-position: -100px 0;
+    }
+
+    .linkedin:hover {
+      background-position: -50px 0;
+    }
+
+    .social a:last-child {
+      margin-right: 0;
+    }
+
+    #mail {
+      font-family: $police-text;
+      color: $color-text;
+      text-decoration: none;
+    }
+  }
 }

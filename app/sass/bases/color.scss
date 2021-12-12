@@ -1,45 +1,45 @@
-/*---BODY---*/
+// BODY
 body {
     background-color: #13152E;
+
     h1 {
         color: $color-subtitle;
-        span{
+
+        span {
             color: $color-base;
         }
     }
+
     h2 {
         color: $color-base;
     }
+
     p {
         color: $color-text;
     }
- 
-/*-- sous titre stage--*/
 
-    .subtitle {
-        color:$color-text;
-    }
-    .comp, .title {
+    .comp,
+    .title {
         color: $color-text;
     }
 }
 
-/*---SECTION COMPETENCES---*/
+// PORTFOLIO
+#port {
 
-/*---SECTION PORTFOLIO---*/
-#port{
-    .my_port, .b_case a {
-        color:$color-text;
+    .my_port,
+    .b_case a {
+        color: $color-text;
     }
 }
 
-/*--FOOTER--------------*/
-
+// FOOTER
 footer {
     em {
         color: $color-subtitle;
     }
-    a{
+
+    a {
         color: $color-base;
     }
 }

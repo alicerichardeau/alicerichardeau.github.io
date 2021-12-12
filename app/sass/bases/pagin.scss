@@ -1,5 +1,4 @@
-/*---BODY---*/
-
+// BODY
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +23,7 @@ body {
     }
 }
 
-/*---HEADER---*/
+// HEADER
 header {
     display: flex;
     flex-direction: column;
@@ -41,7 +40,7 @@ header {
     }
 }
 
-/*--- SECTION A PROPOS ------*/
+// ABOUT
 #about {
     #apropos {
         margin-top: 3rem;
@@ -62,7 +61,7 @@ header {
     }
 }
 
-/*-- SECTION MES COMPETENCES ---*/
+// COMPETENCES
 #my-comp {
     #container {
         max-width: 960px;
@@ -80,7 +79,7 @@ header {
     padding-top: 0;
 }
 
-/*--SECTION PORTFOLIO--*/
+// PORTFOLIO
 #port {
 
     margin-top: 4rem;
@@ -108,12 +107,12 @@ header {
     padding: 0 1rem;
 }
 
-/*--SECTION CONTACT--*/
+// CONTACT
 #contact {
     margin: 4rem 0;
 }
 
-/*-----FOOTER----------*/
+// FOOTER
 footer {
     width: 100%;
 
@@ -125,8 +124,7 @@ footer {
 }
 
 
-/*###################################""
-######PAGE BUSINESS CASE################*/
+// BUSINESS CASE PAGE
 #page_businesscase {
     h1 {
         margin: 3rem 0;

@@ -1,88 +1,95 @@
-/*---BODY---*/
-
+// BODY
 body {
-#bloc_page {
-    
-    font-family:  $police-text;
-    h1, h2 {
-    font-family: $police-title;
-    }
-    h1 {
-        font-size: 5rem;
-        span {
-            font-size: 7rem;
-        }
-    }
-    h2 {
-        font-size: 3rem;
-    }
-    .h2:hover {
-        transform: scale(1.1);
-    }
-    p {
-        font-size: 16px;
-        font-family: $police-text;
-    }
+    #bloc_page {
 
-    /*sous-titre du header*/
-    .title {
         font-family: $police-text;
-        font-size: 2rem;
-        font-weight: normal;
-    }
-    .subtitle {
-        font-family: $police-text;
-        font-size: 1rem;
-        font-style: italic;
-        font-weight: unset;
-    }
-    
-}
 
-/*---SECTION ABOUT---*/
-#about {
-    #text {
-        p:first-child::first-letter {
+        h1,
+        h2 {
             font-family: $police-title;
-            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 5rem;
+
+            span {
+                font-size: 7rem;
+            }
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        .h2:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            font-size: 16px;
+            font-family: $police-text;
+        }
+
+        .title {
+            font-family: $police-text;
             font-size: 2rem;
-            color: $color-base;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-family: $police-text;
+            font-size: 1rem;
+            font-style: italic;
+            font-weight: unset;
+        }
+
+    }
+
+    //  ABOUT
+    #about {
+        #text {
+            p:first-child::first-letter {
+                font-family: $police-title;
+                font-weight: bold;
+                font-size: 2rem;
+                color: $color-base;
+            }
         }
     }
-}
 
-/*---SECTION MES COMPETENCES---*/
-#my-comp {
-    .comp {
-        font-size: 1rem;
-        text-transform: uppercase;
-        padding-top: 2rem;
+    // COMPETENCES
+    #my-comp {
+        .comp {
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding-top: 2rem;
+        }
     }
-}
 
-/*---SECTION PORTFOLIO---*/
-#port {
-    #realisations {
+    // PORTFOLIO
+    #port {
+        #realisations {
+            a {
+                text-decoration: none;
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    // FOOTER
+    footer {
         a {
             text-decoration: none;
-        }
-        span {
-            text-transform: uppercase;
-            font-size: 2.5rem;
+            font-style: italic;
         }
     }
 }
 
-/*---FOOTER---*/
-footer {
-    a {
-        text-decoration: none;
-        font-style: italic;
-    }
-}
-}
-// PAGE BUSINESS CASE
-// ####################
+// BUSINESS CASE PAGE
 #page_businesscase {
     h1 {
         font-family: $police-title;
