@@ -1,5 +1,4 @@
 /*---HEADER---*/
-
 header {
 
     background:$color-bkgd;
@@ -7,23 +6,24 @@ header {
 }
 
 /*---SECTION ABOUT---*/
-
-#text{
+#text {
     border-radius: 10px;
 }
 
 /*---SECTION COMPETENCES---*/
-
-#container{
-    p{
+#container {
+    p {
         background: $linear;
+    }
+    p:hover {
+        background: $linear-hover;
     }
 }
 
 /*---SECTION PROTFOLIO---*/
-#port{
-    #realisations{
-        .my_port, .b_case{
+#port {
+    #realisations {
+        .my_port, .b_case {
             width: 320px;
             height: 170px;
             background-size: contain;
@@ -43,7 +43,6 @@ header {
 }
 
 /*--FOOTER--*/
-
-footer{
+footer {
     background-color: $color-bkgd;
 }

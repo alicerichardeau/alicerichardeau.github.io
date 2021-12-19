@@ -1,7 +1,7 @@
 
-body{
+body {
 
-    .button input{
+    .button input {
         font-family: $police-text;
         font-size: 1rem;
         color:$color-text;
@@ -9,21 +9,21 @@ body{
         border-radius: 3px;
         border: none;
     }
-    .butwhite a input{
+    .butwhite a input {
         background-color: $color-bkgd;
     }
-    .butwhite a input:hover{
+    .butwhite a input:hover {
         background: $linear;
     }
-    .butwhite a input:active{
+    .butwhite a input:active {
         border: 1px solid $grey;
         background: transparent;
     }
 }
 
 //BUSINESS CASE PAGE
-#page_businesscase{
-    .butwhite{
+#page_businesscase {
+    .butwhite {
         margin-bottom: 1rem;
     }
 }

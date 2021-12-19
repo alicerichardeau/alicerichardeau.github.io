@@ -10,13 +10,12 @@ $box-shadow: rgb(121 121 121 / 35%) 1px 5px 5px;
 $border-box: 1px solid $grey;
 
 
-
-
 /*----POLICE----*/
 $police-title: 'Nothing You Could do', cursive;
 $police-text: 'Martel Sans', cursive;
 
 /*---COMPONENTS---*/
-$linear: linear-gradient( to right,$color-linear , $color-base);
+$linear: linear-gradient(to right, $color-linear, $color-base);
+$linear-hover: linear-gradient(to right, $color-base, $color-linear);
 
 
