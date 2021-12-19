@@ -13,25 +13,15 @@ body{
         background-color: $color-bkgd;
     }
     .butwhite a input:hover{
-        border: 1px solid $grey;
-    }
-    .butwhite a input:active{
-        transform: translate(0px, 5px);
-        box-shadow: none;
         background: $linear;
     }
-    .butorg input{
-        background: linear-gradient($color-bkgd, $color-base);
-    }
-    .butorg input:hover{
-        background-color: $color-base;
-    }
-    .butmail{
-        margin: 0;
+    .butwhite a input:active{
+        border: 1px solid $grey;
+        background: transparent;
     }
 }
-//PAGE BUSINESS CASE
 
+//BUSINESS CASE PAGE
 #page_businesscase{
     .butwhite{
         margin-bottom: 1rem;
