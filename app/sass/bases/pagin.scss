@@ -1,70 +1,18 @@
-// BODY
+// body
 body {
-    margin: 0;
-    padding: 0;
 
-    #bloc_page {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
-        box-sizing: border-box;
-
-        .h2 {
-            padding: 4rem 0;
-            margin: 0;
-            display: inline-block;
-        }
-
-        h1 {
-            margin: 0;
-            padding: 0 2rem;
-        }
-    }
+    
 }
 
-// HEADER
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    h3,
-    h2 {
-        padding: 0 2rem;
-    }
 
-    #head {
-        width: 100%;
-    }
-}
-
-// ABOUT
-#about {
-    #apropos {
-        margin-top: 3rem;
-    }
-
-    #text {
-        padding: 1rem;
-        max-width: 750px;
-    }
-
-    #text p {
-        padding: 0;
-        margin: 0;
-    }
-
-    #cont_about {
-        margin: 0 2rem;
-    }
-}
-
-// COMPETENCES
-#my-comp {
+// skills
+#skills {
     #container {
         max-width: 960px;
+        .bloc {
+            width: 320px;
+        }
     }
 
     p {
@@ -74,12 +22,12 @@ header {
     margin-top: 2rem;
 }
 
-.first_comp {
+.first-skill {
     margin-top: 0;
     padding-top: 0;
 }
 
-// PORTFOLIO
+// portfolio
 #port {
 
     margin-top: 4rem;
@@ -88,34 +36,31 @@ header {
         padding-bottom: 4rem;
     }
 
-    #realisations {
+    #achievements {
         max-width: 960px;
         margin: 0 auto;
-
+       
         h3 {
             margin-top: 0;
         }
-
-        .b_case,
-        .my_port {
+        .business-case,
+        .my-portfolio, .hestia {
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
-
     padding: 0 1rem;
 }
 
-// CONTACT
+// contact
 #contact {
     margin: 4rem 0;
 }
 
-// FOOTER
+// footer
 footer {
     width: 100%;
-
     p {
         text-align: center;
         margin: 0;
@@ -123,14 +68,12 @@ footer {
     }
 }
 
-
 // BUSINESS CASE PAGE
 #page_businesscase {
     h1 {
         margin: 3rem 0;
         font-size: 3rem;
     }
-
     p {
         margin-bottom: 3rem;
     }

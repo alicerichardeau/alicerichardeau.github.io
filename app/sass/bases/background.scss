@@ -1,0 +1,15 @@
+
+// about
+#text {
+    border-radius: 10px;
+}
+
+// skills
+#container {
+    p {
+        background: $linear;
+    }
+    p:hover {
+        background: $linear-hover;
+    }
+}

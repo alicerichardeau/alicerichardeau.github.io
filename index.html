@@ -16,12 +16,13 @@
 </head>
 
 <body>
-    <div id="bloc_page">
 
+    <div id="bloc-page">
         <!--###################### HEADER ###########################################################-->
         <nav>
+            <a href=""><img class="logo" src="./img/logo-ar.svg" alt="Alice Richardeau"></a>
             <input id="menu_check" type="checkbox" class="menu_checkbox">
-            <label for="menu_check" class="menu_toogle">&equiv;</label>
+            <label for="menu_check" class="menu_toogle"><img src="./img/burger-menu.svg" alt="menu"></label>
             <ul class="menu">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
@@ -81,22 +82,33 @@
             <div class="bubble"></div>
             <div class="bubble"></div>
             <div class="bubble"></div>
-            <h1>Alice<span>.</span>Richardeau</h1>
-            <h2 class="title">Développeuse Web et Web Mobile</h2>
+                <div class="title-head">
+                    <h1>Alice<img src="./img/bubble-title.svg" alt="">Richardeau</h1>
+                    <h2 class="title">Développeuse Web</h2>
+                    <div class="rectangle"></div>
+                </div>
         </header>
 
         <!-- ######## SECTION ABOUT ####################################################################-->
         <section id="about">
-            <h2 id="apropos" class="h2">Qui suis-je&nbsp;?</h2>
-            <div class="underline"></div>
-            <div id="cont_about">
+            <h2 class="linear anim-to-right">Qui suis-je&nbsp;?</h2>
+            <div class="container-about">
                 <!--présentation text-->
-                <div id="text">
-                    <p>Je suis Alice, Développeuse Web. Je vous propose mes compétences en développement Web. Je peux créer et gérer des
-                        sites en Front-End ainsi qu’en Back-End à l’aide des langages HTML, CSS, Javascript et PHP.</p>
-                    <p>J'utilise aussi la librairie Bootstrap, les frameworks Angular et Symfony. Je maîtrise WordPress,
+                <div class="text">
+                    <p>Je suis Alice et je vous propose mes compétences en <strong>développement Web</strong>&nbsp;!
+                        </p>
+                        <p>J'aime la variété qu'apporte ce métier, développeur web est un travail de passion et de challenges.</p>
+                        <p>
+                        Je peux
+                        créer et gérer des
+                        sites en Front-End ainsi qu’en Back-End à l’aide des langages <strong> HTML</strong>,
+                        <strong>CSS</strong>, <strong>Javascript</strong> et <strong>PHP</strong>.</p>
+                    <p>J'utilise aussi la librairie <strong>Bootstrap</strong>, les frameworks <strong>Angular</strong>
+                        et <strong>Symfony</strong>. <br>
+                        Je maîtrise <strong>WordPress</strong>,
                         la création de thèmes et de plugins.</p>
-                    <p>Engagée, sociable et sachant m'adapter, je saurai m'investir à vos côtés&nbsp;!</p>
+                    <p>Vous trouverez ci-dessous mes compétences ainsi que certaines de mes réalisations, et si vous souhaitez en savoir plus, contactez-moi&nbsp;!
+                    </p>
                 </div>
                 <!--profile image-->
                 <img src="./img/profil_trois.png" alt="photo de profil" />
@@ -104,13 +116,13 @@
         </section>
 
         <!--###### SECTION COMPETENCES ###################################################################-->
-        <section id="my-comp">
+        <section id="skills">
             <!--title-->
-            <h2 id="competences" class="h2">Mes compétences</h2>
+            <h2 class="linear">Mes compétences</h2>
             <div id="container">
                 <div class="bloc">
                     <!--bloc front-end-->
-                    <h3 class="first_comp comp">Front-End</h3>
+                    <h3 class="first-skill comp">Front-End</h3>
                     <p>HTML</p>
                     <div class="bar">
                     </div>
@@ -138,7 +150,7 @@
                 <div class="last_bloc">
                     <!--bloc divers-->
                     <div class="bloc">
-                        <h3 class="first_comp comp">Divers</h3>
+                        <h3 class="first-skill comp">Divers</h3>
                         <p>Linux</p>
                         <div class="bar">
                         </div>
@@ -155,26 +167,29 @@
                     </div>
                     <!--link upload cv-->
                     <div class="bloc">
-                        <div class="button butwhite">
-                            <a href="./img/alice-richardeau.pdf" target="_blank"><input type="button"
-                                    value="Télécharger mon CV" /></a>
-                        </div>
+                            <a class="button" href="./img/alice-richardeau.pdf" target="_blank">Voir mon CV</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--################## SECTION PORTFOLIO ##############################################-->
-        <section id="port">
-            <h2 class="h2" id="portfolio">Portfolio</h2>
+        <section id="portfolio">
+            <h2 class="linear">Portfolio</h2>
             <p>Ci dessous, vous trouverez mes réalisations, en constante évolution&nbsp;!</p>
-            <div id="realisations">
-                <div class="my_port"><a href="#">
+            <div id="achievements">
+                <a href="">
+                    <div class="hestia projects">
+                        <div class="background"></div>
+                        <img src="./img/site-web-hestia-energies.png" alt="">
+                    </div>
+                </a>
+                <div class="my-portfolio"><a href="#">
                         <h3 class="hidden">Mon Portfolio</h3>
                         <i class="hidden">Alice Richardeau</i>
                     </a>
                 </div>
-                <div class="b_case">
+                <div class="business-case">
                     <a href="./businesscase.html" target="_blank">
                         <h3 class="hidden">La Nîmes'Alerie</h3>
                         <i class="hidden">E-commerce Business Case</i>
@@ -185,7 +200,7 @@
 
         <!--####################### SECTION CONTACT ################################################-->
         <section id="contact">
-            <h2 class="h2">Conctactez-moi&nbsp;!</h2>
+            <h2 class="linear">Conctactez-moi&nbsp;!</h2>
             <div class="social">
                 <a href="mailto:alicerichardeau@outlook.com" class="mail" target="_blank"></a>
                 <a href="https://github.com/alicerichardeau" class="github" target="_blank"></a>

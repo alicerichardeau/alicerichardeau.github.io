@@ -1,13 +1,14 @@
 /*----COLORS----*/
-$color-base:#E51681 ;
-$color-subtitle: white;
-$color-text: #c3c3c3;
-$color-bkgd: #1B1D38;
-$grey: #EEEAED;
+$color-base:#d9b9d2;
+$color-text: #3b3737;
+$grey: #f9f1f3;
 $transparent:#11ffee00;
-$color-linear: #574F54;
-$box-shadow: rgb(121 121 121 / 35%) 1px 5px 5px;
+$color-linear: rgba(0, 0, 0, 0) linear-gradient(40deg, rgb(243, 101, 207), rgb(99, 97, 98)) repeat scroll 0% 0% padding-box text;
+
+// STYLE
+$box-shadow: 0 10px 35px 0 rgb(0 0 0 / 18%);
 $border-box: 1px solid $grey;
+$border-radius: 15px;
 
 
 /*----POLICE----*/

@@ -1,28 +1,20 @@
 // BODY
 body {
-    #bloc_page {
+    #bloc-page {
 
+        h2 {
+            font-size: 1.5rem;
+        }
         font-family: $police-text;
-
         h1,
         h2 {
             font-family: $police-title;
         }
-
         h1 {
-            font-size: 5rem;
-
+            font-size: 1.5rem;
             span {
                 font-size: 7rem;
             }
-        }
-
-        h2 {
-            font-size: 3rem;
-        }
-
-        .h2:hover {
-            transform: scale(1.1);
         }
 
         p {
@@ -32,8 +24,8 @@ body {
 
         .title {
             font-family: $police-text;
-            font-size: 2rem;
             font-weight: normal;
+            font-size: 1.2rem;
         }
 
         .subtitle {
@@ -58,7 +50,7 @@ body {
     }
 
     // COMPETENCES
-    #my-comp {
+    #skills {
         .comp {
             font-size: 1rem;
             text-transform: uppercase;
@@ -68,7 +60,7 @@ body {
 
     // PORTFOLIO
     #port {
-        #realisations {
+        #achievements {
             a {
                 text-decoration: none;
             }

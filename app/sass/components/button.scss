@@ -4,20 +4,10 @@ body {
     .button input {
         font-family: $police-text;
         font-size: 1rem;
-        color:$color-text;
+        color: $color-text;
         padding: 1rem 2rem;
-        border-radius: 3px;
+        border-radius: $border-radius;
         border: none;
-    }
-    .butwhite a input {
-        background-color: $color-bkgd;
-    }
-    .butwhite a input:hover {
-        background: $linear;
-    }
-    .butwhite a input:active {
-        border: 1px solid $grey;
-        background: transparent;
     }
 }
 

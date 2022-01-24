@@ -1,33 +1,84 @@
-
-    nav li a {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $color-subtitle;
-    padding: .5rem 2rem;
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid $grey;
+    .logo {
+        width: 50px;
+    }
+    // hide checkbox
+    .menu_checkbox {
+        opacity: 0;
+        position: absolute;
+        top: -5000px;
+    }
+    .menu_toogle {
+        display: flex;
+        img {
+            margin: 1rem;
+        }
+    }
+    .menu_toogle:hover {
+        background-color: $grey;
+    }
+    // don't show menu
+    .menu {
+        display: none;
     }
 
-    nav ul {
+    // when checkbox is checked show menu
+    .menu_checkbox:checked~.menu {
+        display: block;
+    }
+
+    ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         list-style-type: none;
         justify-content: center;
-        margin:0;
+        margin: 0;
         padding: 0;
-    }
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 60px;
+        background-color: white;
 
-    nav ul li a:hover {
-        color: $color-base;
-    }
+        li a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: .5rem 1rem;
+            color: $color-text;
+        }
 
-    nav {
-        background-color: #13152E;
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        .menu_checkbox {
-            opacity:0;
-            position: absolute;
-            top: -5000px;
-        }   
+        li a:hover {
+            color: $color-base;
+        }
+
+        li:last-child {
+            padding-bottom: 2rem;
+        }
     }
+    @media screen and (min-width: 700px) {
+        ul {
+            flex-direction: row;
+        }
+        .menu {
+            display: flex;
+            position: inherit;
+            li:last-child {
+                padding-bottom: 0;
+            }
+        }
+        .menu_toogle {
+            display: none;
+        }
+    }
+}
