@@ -1,0 +1,16 @@
+.background-image {
+    position: relative;
+    .wave {
+        width: 100%;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        z-index: -1;
+    }
+    .photo {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        z-index: -2;
+    }
+}

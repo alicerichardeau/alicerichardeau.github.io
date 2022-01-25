@@ -9,8 +9,11 @@ nav {
     align-items: center;
     background-color: white;
     border-bottom: 1px solid $grey;
-    .logo {
-        width: 50px;
+    .logo-link {
+        display: flex;
+        .logo {
+            width: 50px;
+        }
     }
     // hide checkbox
     .menu_checkbox {
@@ -22,6 +25,7 @@ nav {
         display: flex;
         img {
             margin: 1rem;
+            width: 30px;
         }
     }
     .menu_toogle:hover {

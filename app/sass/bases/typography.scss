@@ -12,6 +12,14 @@ body {
         }
         h1 {
             font-size: 1.5rem;
+            margin: 1rem 0;
+
+            @media screen and (min-width: 400px) {
+                font-size: 2rem;
+            }
+            @media screen and (min-width: 800px) {
+                font-size: 3rem;
+            }
             span {
                 font-size: 7rem;
             }
@@ -25,7 +33,7 @@ body {
         .title {
             font-family: $police-text;
             font-weight: normal;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .subtitle {
@@ -40,12 +48,7 @@ body {
     //  ABOUT
     #about {
         #text {
-            p:first-child::first-letter {
-                font-family: $police-title;
-                font-weight: bold;
-                font-size: 2rem;
-                color: $color-base;
-            }
+            
         }
     }
 
