@@ -51,7 +51,7 @@ nav {
         position: absolute;
         width: 100%;
         right: 0;
-        top: 60px;
+        top: 55px;
         background-color: white;
 
         li a {
@@ -66,9 +66,6 @@ nav {
             color: $color-base;
         }
 
-        li:last-child {
-            padding-bottom: 2rem;
-        }
     }
     @media screen and (min-width: 700px) {
         ul {

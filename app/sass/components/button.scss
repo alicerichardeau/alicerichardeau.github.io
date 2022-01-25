@@ -3,12 +3,16 @@ body {
 
     .button{
         text-decoration: none;
-        background-color: $color-base;
+        background-color: $color-secondary;
         color: white;
         padding: 0.3rem 1rem;
         padding-top: 0.5rem;
         border-radius: $border-radius;
-        
+        box-shadow: $box-shadow;
+    }
+    .button:hover {
+        transition: 0.8s;
+        background-color: $color-base;
     }
 }
 
