@@ -6,8 +6,6 @@ body {
   #bloc-page {
     width: 100%;
     text-align: center;
-   
-
     h1 {
       img {
         width: 11px;
@@ -28,27 +26,6 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
-
-    // skills
-    #skills {
-      .bar {
-        height: 0.5rem;
-        display: flex;
-        background: $linear;
-      }
-
-      #container {
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-      }
-
-      .last_bloc {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
     }
 
     // portfolio

@@ -1,0 +1,32 @@
+// skills
+#skills {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 960px;
+        
+        .bloc {
+            width: 300px;
+            background-color: white;
+            margin: 2rem;
+            box-shadow: $box-shadow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            p {
+                margin-bottom: 0;
+            }
+            h3 {
+                margin: 0;
+            }
+            .bar {
+                height: 0.5rem;
+                width: 50%;
+                display: flex;
+                background-color: $color-base;
+            }
+        }
+    }
+}

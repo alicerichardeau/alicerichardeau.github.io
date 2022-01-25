@@ -3,7 +3,6 @@ body {
 
         header {
             position: relative;
-            height: 150px;
 
             .background-white {
                 width: 80%;
@@ -98,6 +97,7 @@ body {
                 position: relative;
                 width: 300px;
                 height: 100px;
+                margin-top: 1rem;
                 animation-duration: 1s;
                 animation-name: slidein;
                 @keyframes slidein {
@@ -130,7 +130,6 @@ body {
             }
             // min width 400px
             @media screen and (min-width: 400px) {
-                height: 200px;
                 .title-head {
                     width: 400px;
                     .rectangle {
@@ -141,7 +140,6 @@ body {
             }
 
             @media screen and (min-width: 800px) {
-                height: 230px;
                 .title-head {
                     width: 600px;
                     .rectangle {

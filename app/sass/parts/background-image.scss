@@ -12,5 +12,8 @@
         position: fixed;
         left: 0;
         z-index: -2;
+        filter: contrast(50%);
+        -webkit-filter: contrast(50%);
+            
     }
 }

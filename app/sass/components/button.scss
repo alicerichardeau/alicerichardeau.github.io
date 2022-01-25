@@ -1,19 +1,14 @@
 
 body {
 
-    .button input {
-        font-family: $police-text;
-        font-size: 1rem;
-        color: $color-text;
-        padding: 1rem 2rem;
+    .button{
+        text-decoration: none;
+        background-color: $color-base;
+        color: white;
+        padding: 0.3rem 1rem;
+        padding-top: 0.5rem;
         border-radius: $border-radius;
-        border: none;
+        
     }
 }
 
-//BUSINESS CASE PAGE
-#page_businesscase {
-    .butwhite {
-        margin-bottom: 1rem;
-    }
-}
