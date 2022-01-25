@@ -1,5 +1,10 @@
 // contact
 #contact {
+    padding: 2rem 0;
+    background-color: $grey;
+    h2 {
+      margin-top: 0;
+    }
     .social a {
       background-image: url("../../../img/social.svg");
       display: inline-block;
@@ -38,9 +43,9 @@
       margin-right: 0;
     }
 
-    #mail {
-      font-family: $police-text;
-      color: $color-text;
-      text-decoration: none;
+
+    @media screen and (min-width: 970px) {
+      
     }
+
   }

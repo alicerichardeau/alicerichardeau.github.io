@@ -1,0 +1,19 @@
+body {
+    #bloc-page {
+
+        footer {
+            width: 100%;
+            background-color: rgb(73, 64, 70);
+            a {
+                color: $color-base;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+                padding: 2rem 0;
+                font-size: 0.8rem;
+                color: white;
+            }
+        }
+    }
+}
