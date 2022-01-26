@@ -95,7 +95,7 @@ body {
             // title
             .title-head {
                 position: relative;
-                width: 300px;
+                width: 500px;
                 height: 100px;
                 margin-top: 1rem;
                 animation-duration: 1s;
@@ -112,12 +112,12 @@ body {
                 }
                 // rectangle
                 .rectangle {
-                    width: 200px;
+                    width: 250px;
                     height: 10px;
                     background-color: $grey;
                     position: absolute;
                     bottom: 53px;
-                    left: 50px;
+                    left: 125px;
                     z-index: -1;
                 }
             }
@@ -130,21 +130,45 @@ body {
             }
             // min width 400px
             @media screen and (min-width: 400px) {
+                h1 {
+                    font-size: 2rem;
+                }
                 .title-head {
-                    width: 400px;
                     .rectangle {
                         width: 300px;
                         bottom: 45px;
+                        left: 100px;
                     }
                 }
             }
 
             @media screen and (min-width: 800px) {
+                h1 {
+                    font-size: 3rem;
+                }
                 .title-head {
                     width: 600px;
                     .rectangle {
-                        width: 500px;
+                        width: 400px;
+                        left: 100px;
                         bottom: 30px;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1000px) {
+                .title {
+                    font-size: 2rem;
+                }
+                h1 {
+                    font-size: 4rem;
+                }
+                .title-head {
+                    width: 800px;
+                    .rectangle {
+                        height: 20px;
+                        bottom: 13px;
+                        width: 600px;
                     }
                 }
             }

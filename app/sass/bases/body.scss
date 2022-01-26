@@ -20,6 +20,17 @@ body {
       margin: 0;
     }
 
+    animation
+    .reveal {
+      opacity: 0;
+    }
+    .reveal-loaded {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 1s cubic-bezier(0.5, 0, 0, 1);
+    }
+
+  
     // header
     header {
       display: flex;

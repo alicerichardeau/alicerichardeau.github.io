@@ -1,11 +1,15 @@
 // contact
 #contact {
-    padding: 2rem 0;
-    background-color: $grey;
-    h2 {
-      margin-top: 0;
-    }
-    .social a {
+  padding: 2rem 0;
+  background-color: $grey;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .social {
+    margin-bottom: 2rem;
+    a {
       background-image: url("../../../img/social.svg");
       display: inline-block;
       width: 50px;
@@ -14,38 +18,40 @@
       transition: all .15s ease-out;
       border-radius: 100%;
     }
-
-    .mail {
-      background-position: 0 -50px;
-    }
-
-    .github {
-      background-position: -100px -50px;
-    }
-
-    .linkedin {
-      background-position: -50px -50px;
-    }
-
-    .mail:hover {
-      background-position: 0 0;
-    }
-
-    .github:hover {
-      background-position: -100px 0;
-    }
-
-    .linkedin:hover {
-      background-position: -50px 0;
-    }
-
-    .social a:last-child {
-      margin-right: 0;
-    }
-
-
-    @media screen and (min-width: 970px) {
-      
-    }
-
   }
+
+
+  .mail {
+    background-position: 0 -50px;
+  }
+
+  .github {
+    background-position: -100px -50px;
+  }
+
+  .linkedin {
+    background-position: -50px -50px;
+  }
+
+  .mail:hover {
+    background-position: 0 0;
+  }
+
+  .github:hover {
+    background-position: -100px 0;
+  }
+
+  .linkedin:hover {
+    background-position: -50px 0;
+  }
+
+  .social a:last-child {
+    margin-right: 0;
+  }
+
+
+  @media screen and (min-width: 970px) {
+    background-color: transparent;
+  }
+
+}
