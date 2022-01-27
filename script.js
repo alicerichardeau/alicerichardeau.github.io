@@ -1,50 +1,28 @@
 
-// const images = document.querySelectorAll(".reveal")
+// animation css - reveal elements
+// ###############################
 
-// let options = {
-//     root: null,
-//     rootMargin: "0px",
-//     threshold: .1
-// }
-
-// function handLeIntersect(entries){
-//     console.log(entries);
-
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.style.opacity = 1;
-//         }
-//     })
-// }
-
-// const observer = new IntersectionObserver(handLeIntersect, options)
-
-// images.forEach(images => {
-//     observer.observe(images)
-// })
-
-const threshold = .1
+// define options
+const ratio = .6
 const options = {
   root: null,
   rootMargin: '0px',
-  threshold
+  threshold: ratio
 }
 
+// add class reveal-visible when ratio is good
 const handleIntersect = function (entries, observer) {
   entries.forEach(function (entry) {
-    if (entry.intersectionRatio > threshold) {
-      entry.target.classList.remove('reveal')
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add('reveal-visible')
       observer.unobserve(entry.target)
     }
   })
 }
 
-document.documentElement.classList.add('reveal-loaded')
-
-window.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver(handleIntersect, options)
-  const targets = document.querySelectorAll('.reveal')
-  targets.forEach(function (target) {
-    observer.observe(target)
+// loop foreach element who have reveal class css
+  const observer = new IntersectionObserver(handleIntersect, options) 
+  document.querySelectorAll('.reveal').forEach(function(r) {
+    observer.observe(r)
   })
-})
+  
