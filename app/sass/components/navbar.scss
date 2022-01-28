@@ -35,7 +35,7 @@ nav {
     .menu {
         display: none;
     }
-
+    
     // when checkbox is checked show menu
     .menu_checkbox:checked~.menu {
         display: block;
@@ -65,6 +65,7 @@ nav {
         li a:hover {
             color: $color-base;
         }
+        
 
     }
     @media screen and (min-width: 700px) {

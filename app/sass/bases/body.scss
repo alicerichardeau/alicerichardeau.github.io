@@ -16,10 +16,7 @@ body {
     h2 {
       padding: 0 2rem;
     }
-    .title {
-      margin: 0;
-    }
-
+    
     // animation
     .reveal {
       opacity: 0;
@@ -30,6 +27,36 @@ body {
       opacity: 1;
       transform: translateY(0);
       transition: 2s cubic-bezier(0.5, 0, 0, 1);
+    }
+
+    .slide-in {
+      animation-duration: 1s;
+                animation-name: slidein;
+                @keyframes slidein {
+                    from {
+                      margin-right: 100%;
+                      width: 300%;
+                    }      
+                    to {
+                      margin-right: 0%;
+                      width: 100%;
+                    }
+                }
+    }
+
+    .slide-in-two {
+      animation-duration: 2s;
+                animation-name: slidein;
+                @keyframes slidein {
+                    from {
+                      margin-right: 100%;
+                      width: 300%;
+                    }      
+                    to {
+                      margin-right: 0%;
+                      width: 100%;
+                    }
+                }
     }
 
     // header

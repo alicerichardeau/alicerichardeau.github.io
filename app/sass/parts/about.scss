@@ -1,19 +1,9 @@
 #about {
   
-  margin: 3rem 0;
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
-  .container-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 980px;
-    margin: 0 2rem;
-  }
 
   img {
     width: 110px;
@@ -31,10 +21,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 1rem;
     box-shadow: $box-shadow;
-    
-    max-width: 500px;
     
     p:first-child::first-letter {
       font-family: $police-title;
