@@ -3,7 +3,7 @@
 // ###############################
 
 // define options
-const ratio = .3
+const ratio = .4
 const options = {
   root: null,
   rootMargin: '0px',
