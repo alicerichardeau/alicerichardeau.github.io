@@ -28,6 +28,10 @@ body {
             font-weight: unset;
         }
 
+        .title {
+            font-family: $police-subtitle;
+        }
+
         @media screen and (min-width: 1000px) {
             h2 {
             font-size: 4rem;
