@@ -2,8 +2,8 @@ body {
     #bloc-page {
 
         header {
-            height: 270px;
-            
+            // height: 270px;
+
             // title
             .title-head {
                 display: flex;
@@ -30,7 +30,7 @@ body {
             }
 
             @media screen and (min-width: 800px) {
-                height: 370px;
+                // height: 370px;
                 .title-head {
                     h1 {
                         font-size: 4rem;
@@ -42,7 +42,7 @@ body {
             }
 
             @media screen and (min-width: 1000px) {
-                height: 470px;
+                // height: 470px;
                 .title-head {
                     h1 {
                         font-size: 6rem;
