@@ -1,5 +1,5 @@
 #about {
-  
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +22,7 @@
     justify-content: center;
     padding: 1rem;
     box-shadow: $box-shadow;
+    width: 300px;
     
     p:first-child::first-letter {
       font-family: $police-title;
@@ -35,9 +36,27 @@
     margin: 1rem;
   }
   
+  @media screen and (min-width: 600px) {
+    .text {
+      width: 400px;
+    }
+  }
+
   @media screen and (min-width: 700px) {
     .container-about {
       flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .text {
+      width: 700px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .text {
+      max-width: 800px;
     }
   }
  

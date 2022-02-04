@@ -8,6 +8,7 @@
     margin: 1rem;
     margin-top: 3rem;
     padding-top: 1rem;
+    padding: 0 1rem;
     max-width: 980px;
     margin: auto;
     p {
@@ -65,13 +66,19 @@
                 justify-content: flex-start;
                 margin-top: 1rem;
                 width: 100%;
-                .wording {
+                .wording, .wording-one {
                     border-radius: $border-radius;
-                    background-color: $color-base;
+                    
                     color: white;
                     font-size: 0.7rem;
                     padding: 0 0.5rem;
                     margin-right: 0.5rem;     
+                }
+                .wording {
+                    background-color: $color-base;
+                }
+                .wording-one {
+                    background-color: $color-secondary;
                 }
             }
         }
@@ -79,7 +86,7 @@
         @media screen and (min-width: 650px) {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             .achievements-card {
                margin: 1rem;
             }
