@@ -1,4 +1,8 @@
 #portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     box-shadow: $box-shadow;
     margin: 1rem;
@@ -14,6 +18,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        // project card
+        .achievements-card {
+
+            // when hovering
         a:hover {
             .background {
                 display: none;
@@ -26,6 +35,7 @@
                 }
             }
         }
+
         // images projects
         .projects {
             width: 280px;
@@ -33,6 +43,7 @@
             position: relative;
             transition: all 0.7s ease 0s;
             margin: 2rem 0;
+            margin-bottom: 0;
             .background {
                 position: absolute;
                 inset: 0%;
@@ -48,17 +59,35 @@
                 height: 100%;
             }
         }
-    }
-    @media screen and (min-width: 650px) {
-        .achievements {
+            // div wording under image
+            .wording-content {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 1rem;
+                width: 100%;
+                .wording {
+                    border-radius: $border-radius;
+                    background-color: $color-base;
+                    color: white;
+                    font-size: 0.7rem;
+                    padding: 0 0.5rem;
+                    margin-right: 0.5rem;     
+                }
+            }
+        }
+
+        @media screen and (min-width: 650px) {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            .projects {
-                margin: 1rem;
+            .achievements-card {
+               margin: 1rem;
             }
         }
+
     }
+
+    
     @media screen and (min-width: 1000px) {
         h2 {
             margin-bottom: 0;
