@@ -2,62 +2,26 @@ body {
     #bloc-page {
 
         header {
-            position: relative;
-            height: 47px;
-
-            .background-white {
-                width: 80%;
-                height: 300px;
-                background-color: white;
-                position: absolute;
-                z-index: -1;
-                left: 0;
-            }
-           
+            height: 270px;
+            
             // title
             .title-head {
-                position: relative;
-                width: 300px;
-                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 h1 {
-                    padding-top: 2rem;
                     font-size: 2rem;
                 }
-                // rectangle
-                .rectangle {
-                    width: 250px;
-                    height: 7px;
-                    background-color: $grey;
-                    position: absolute;
-                    bottom: 23px;
-                    left: 25px;
-                    z-index: -1;
-                }
-
                 .title {
                     font-size: 1.5rem;
                 }
             }
 
-            .title-head:hover {
-                .rectangle {
-                    transform: scaleY(4);
-                    transition: all 0.3s ease 0s;
-                }
-            }
-
-            @media screen and (min-width: 800px) {
-                height: 73px;
+            @media screen and (min-width: 500px) {
                 .title-head {
-                    width: 600px;
                     h1 {
                         font-size: 3rem;
-                    }
-                    .rectangle {
-                        width: 400px;
-                        left: 100px;
-                        bottom: 7px;
-                        height: 10px;
                     }
                     .title {
                         font-size: 2rem;
@@ -65,21 +29,26 @@ body {
                 }
             }
 
-            @media screen and (min-width: 1000px) {
-                height: 83px;
+            @media screen and (min-width: 800px) {
+                height: 370px;
                 .title-head {
-                    width: 800px;
                     h1 {
                         font-size: 4rem;
                     }
-                    .rectangle {
-                        height: 20px;
-                        bottom: -7px;
-                        width: 500px;
-                        left: 150px;
-                    }
                     .title {
                         font-size: 3rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1000px) {
+                height: 470px;
+                .title-head {
+                    h1 {
+                        font-size: 6rem;
+                    }
+                    .title {
+                        font-size: 5rem;
                     }
                 }
             }

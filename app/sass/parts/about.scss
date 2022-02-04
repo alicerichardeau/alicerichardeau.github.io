@@ -1,6 +1,5 @@
 #about {
   
-  margin: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,38 +34,11 @@
   .text p {
     margin: 1rem;
   }
-  @media screen and (min-width: 400px) {
-    margin-top: 4rem;
-  }
-  @media screen and (min-width: 500px) {
-    margin-top: 5rem;
-  }
-  @media screen and (min-width: 600px) {
-    margin-top: 6rem;
-  }
+  
   @media screen and (min-width: 700px) {
-    margin-top: 7rem;
     .container-about {
       flex-direction: row;
     }
-  }
-  @media screen and (min-width: 800px) {
-    margin-top: 8rem;
-  }
-  @media screen and (min-width: 900px) {
-    margin-top: 9rem;
-  }
-  @media screen and (min-width: 1000px) {
-    margin-top: 10rem;
-  }
-  @media screen and (min-width: 1100px) {
-    margin-top: 11rem;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 12rem;
-  }
-  @media screen and (min-width: 1300px) {
-    margin-top: 13rem;
   }
  
 }

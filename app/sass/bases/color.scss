@@ -18,9 +18,11 @@ body {
     p {
         color: $color-text;
     }
-    .comp,
-    .title {
+    .comp {
         color: white;
+    }
+    .title {
+        color: black;
     }
 }
 
