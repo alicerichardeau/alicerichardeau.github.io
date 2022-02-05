@@ -25,9 +25,6 @@ const handleIntersect = function (entries, observer) {
   document.querySelectorAll('.reveal').forEach(function(r) {
     observer.observe(r)
   })
-
-// ####################################################
-// ####################################################
   
 
 // delete menu on click for navbar mobile
@@ -48,11 +45,9 @@ function showMenu() {
   }
 }
 
+
 menuToogle.addEventListener("click", showMenu);
 menu.addEventListener("click", deleteMenu);
-
-// ####################################################
-// ####################################################
 
 
 //animation for title show letter by letter
@@ -73,7 +68,19 @@ function showLetters()
 	else
 	{
 	  clearTimeout(timeOut);
-	  console.log("end")
 	}
 }
 showLetters();
+
+// change navbar on scroll
+// ########################
+
+window.onscroll = function() {
+  if(document.documentElement.scrollTop > 80) {
+    document.querySelector('nav').style.background = "white";
+    document.querySelector('nav').style.boxShadow = "0 10px 35px 0 rgb(0 0 0 / 18%)";
+  }
+  else {
+    document.querySelector('nav').style.background = "rgba(255, 255, 255, 0.479)";
+  }
+}
