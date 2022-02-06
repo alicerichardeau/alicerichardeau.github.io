@@ -45,7 +45,6 @@ function showMenu() {
   }
 }
 
-
 menuToogle.addEventListener("click", showMenu);
 menu.addEventListener("click", deleteMenu);
 
