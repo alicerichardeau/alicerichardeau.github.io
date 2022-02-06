@@ -77,9 +77,11 @@ showLetters();
 window.onscroll = function() {
   if(document.documentElement.scrollTop > 80) {
     document.querySelector('nav').style.background = "white";
+    document.querySelector('nav').style.height = "53px";
     document.querySelector('nav').style.boxShadow = "0 10px 35px 0 rgb(0 0 0 / 18%)";
   }
   else {
     document.querySelector('nav').style.background = "rgba(255, 255, 255, 0.479)";
+    document.querySelector('nav').style.height = "67px";
   }
 }

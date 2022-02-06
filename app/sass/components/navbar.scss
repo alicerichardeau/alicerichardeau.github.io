@@ -9,6 +9,7 @@ nav {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.479);
     // border-bottom: 1px solid $grey;
+    height: 67px;
     .logo-link {
         display: flex;
         .logo {
@@ -23,6 +24,7 @@ nav {
     }
     .menu_toogle {
         display: flex;
+        height: 100%;
         img {
             margin: 1rem;
             width: 30px;
@@ -51,7 +53,7 @@ nav {
         position: absolute;
         width: 100%;
         right: 0;
-        top: 50px;
+        top: 67px;
         background-color: $grey;
 
         li a {
@@ -75,10 +77,15 @@ nav {
         }
         .menu {
             display: flex;
+            height: 100%;
             justify-content: space-around;
             position: inherit;
             li:last-child {
                 padding-bottom: 0;
+            }
+            li {
+                display: flex;
+                align-items: center;
             }
         }
         .menu_toogle {
