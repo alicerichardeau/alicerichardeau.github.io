@@ -7,7 +7,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.479);
+    background-color: rgba(255, 255, 255, 0.616);
+    transition: 0.8s;
     // border-bottom: 1px solid $grey;
     height: 67px;
     .logo-link {
