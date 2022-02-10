@@ -2,13 +2,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // delete defilement anchor
-  overflow-anchor: none;
-
+ 
   #bloc-page {
   
+    background-image: url('../../../img/business-2717063.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     text-align: center;
+    // filter: contrast(50%);
+    // -webkit-filter: contrast(50%);
     h1 {
       img {
         width: 11px;

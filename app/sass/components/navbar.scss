@@ -50,7 +50,7 @@ nav {
         list-style-type: none;
         justify-content: center;
         margin: 0;
-        padding: 0;
+        padding: 1rem 0;
         position: absolute;
         width: 100%;
         right: 0;
@@ -81,6 +81,7 @@ nav {
             height: 100%;
             justify-content: space-around;
             position: inherit;
+            padding: 0;
             li:last-child {
                 padding-bottom: 0;
             }
