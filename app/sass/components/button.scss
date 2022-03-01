@@ -1,17 +1,44 @@
 body {
-
+    // all buttons
     .button {
         text-decoration: none;
-        background-color: $color-secondary;
         color: white;
         padding: 0.3rem 1rem;
         padding-top: 0.5rem;
         border-radius: $border-radius;
-        box-shadow: $box-shadow;
     }
     .button:hover {
-        transition: 0.8s;
+        transition: 0.2s;
         background-color: $color-base;
+    }
+
+    // buttons outline
+    .button-outline {
+        color: $color-secondary;
+        box-shadow: none;
+        background-color: transparent;
+        border: $border-box;
+        border-color: $color-secondary;
+    }
+    .button-outline:hover {
+        background-color: $color-secondary;
+        color: white;
+    }
+    // buttons primary
+    .button-primary {
+        background-color: $color-base;
+        border: $border-box;
+        border-color: $color-base;
+    }
+    .button-primary:hover {
+        color: $color-base;
+        background-color: transparent;
+    }
+
+    // buttons secondary
+    .button-secondary {
+        background-color: $color-secondary;
+        box-shadow: $box-shadow;
     }
 }
 
