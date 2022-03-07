@@ -14,7 +14,7 @@ nav {
     height: 67px;
     .logo-link {
         display: flex;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         .logo {
             width: 60px;
         }
@@ -73,7 +73,11 @@ nav {
         
 
     }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 720px) {
+
+        .logo-link {
+            margin-left: 1rem;
+        }
 
         ul {
             flex-direction: row;
@@ -85,7 +89,8 @@ nav {
             justify-content: space-between;
             position: inherit;
             padding: 0 1rem;
-            max-width: 1300px;
+            margin-right: 1rem;
+            max-width: 1600px;
             li:last-child {
                 padding-bottom: 0;
             }
