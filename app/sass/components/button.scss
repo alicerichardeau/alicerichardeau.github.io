@@ -8,7 +8,7 @@ body {
         border-radius: $border-radius;
     }
     .button:hover {
-        transition: 0.2s;
+        // transition: 0.1s;
         background-color: $color-base;
     }
 
@@ -21,8 +21,9 @@ body {
         border-color: $color-secondary;
     }
     .button-outline:hover {
-        background-color: $color-secondary;
-        color: white;
+        background-color: $grey;
+        color: $color-base;
+        border-color: $color-base;
     }
     // buttons primary
     .button-primary {
@@ -31,8 +32,8 @@ body {
         border-color: $color-base;
     }
     .button-primary:hover {
-        color: $color-base;
-        background-color: transparent;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
     }
 
     // buttons secondary

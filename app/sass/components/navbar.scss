@@ -9,12 +9,14 @@ nav {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.616);
     transition: 0.8s;
+   
     // border-bottom: 1px solid $grey;
     height: 67px;
     .logo-link {
         display: flex;
+        margin-left: 1rem;
         .logo {
-            width: 50px;
+            width: 60px;
         }
     }
     // hide checkbox
@@ -72,6 +74,7 @@ nav {
 
     }
     @media screen and (min-width: 700px) {
+
         ul {
             flex-direction: row;
             background-color: transparent;
@@ -79,9 +82,10 @@ nav {
         .menu {
             display: flex;
             height: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
             position: inherit;
-            padding: 0;
+            padding: 0 1rem;
+            max-width: 1300px;
             li:last-child {
                 padding-bottom: 0;
             }

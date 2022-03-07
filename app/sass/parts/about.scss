@@ -10,6 +10,7 @@
     display: block;
     border-radius: 100%;
     padding: 1rem;
+    margin-bottom: 1rem;
   }
 
   .text {
@@ -27,6 +28,17 @@
       font-weight: bold;
       font-size: 2rem;
       color: $color-base;
+    }
+
+    p:first-child {
+      font-size: 1.3rem;
+    }
+
+    .hr {
+      width: 30%;
+      height: 2px;
+      background-color: $grey;
+      margin-bottom: 2rem;
     }
   }
 
