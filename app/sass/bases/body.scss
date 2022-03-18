@@ -1,10 +1,12 @@
 body {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
+  font-family: $police-text;
+
   #bloc-page {
-  
+
     background-image: linear-gradient(rgba(150, 150, 150, 0.45), rgba(150, 150, 150, 0.45)), url('../../../img/business-2717063.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -13,69 +15,175 @@ body {
     width: 100%;
     text-align: center;
 
+    .subtitle {
+
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: unset;
+    }
+
+
+    h1, .white {
+
+      color: white;
+
+      span {
+
+        color: $color-base;
+      }
+    }
+
+    h1, h2 {
+      font-family: $police-title;
+    }
+
+    h2 {
+
+      font-size: 2.5rem;
+      color: $color-secondary;
+      padding: 0 2rem;
+    }
+
+    h1 {
+
+      font-size: 1.8rem;
+      margin: 1rem 0;
+
+      span {
+
+        font-size: 7rem;
+      }
+    }
+
+    .linear {
+
+      background: $color-linear;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    p {
+
+      font-size: 16px;
+      color: $color-text;
+    }
+
+    .comp {
+
+      color: white;
+    }
+
+    .title {
+
+      color: white;
+      font-family: $police-subtitle;
+    }
+
+
     strong {
+
       font-weight: normal;
     }
-  
+
     h1 {
+
       img {
+
         width: 11px;
         margin: 0 0.2rem;
       }
     }
 
-    h2 {
-      padding: 0 2rem;
-    }
-    
-    // animation
+    // ##########
+    // animations
+    // ##########
+
     .reveal {
+
       opacity: 0;
       transform: translateY(-30px);
     }
-    
+
     .reveal-visible {
+
       opacity: 1;
       transform: translateY(0);
       transition: 2s cubic-bezier(0.5, 0, 0, 1);
     }
 
     .slide-in {
+
       animation-duration: 1s;
-                animation-name: slidein;
-                @keyframes slidein {
-                    from {
-                      margin-right: 100%;
-                      width: 300%;
-                    }      
-                    to {
-                      margin-right: 0%;
-                      width: 100%;
-                    }
-                }
+      animation-name: slidein;
+
+      @keyframes slidein {
+
+        from {
+
+          margin-right: 100%;
+          width: 300%;
+        }
+
+        to {
+
+          margin-right: 0%;
+          width: 100%;
+        }
+      }
     }
 
     .slide-in-two {
+
       animation-duration: 3s;
-                animation-name: slidein;
-                @keyframes slidein {
-                    from {
-                      margin-right: 100%;
-                      width: 300%;
-                    }      
-                    to {
-                      margin-right: 0%;
-                      width: 100%;
-                    }
-                }
+      animation-name: slidein;
+
+      @keyframes slidein {
+
+        from {
+          margin-right: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-right: 0%;
+          width: 100%;
+        }
+      }
     }
 
+    // #######
     // header
+    // #######
     header {
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    } 
+    }
+
+    // ##############
+    // medias queries
+    // ##################
+    @media screen and (min-width: 500px) {
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
   }
 }
