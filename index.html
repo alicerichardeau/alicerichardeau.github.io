@@ -2,17 +2,21 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="utf-8" />
     <meta property="og:type" content="website">
     <meta property="og:image" content="./img/bckgd.jpg">
     <meta property="og:title" content="Alice Richardeau, développeuse web et web mobile">
     <meta name="description" content="Alice Richardeau, développeuse web, PHP, Javascript, 
     HTML, CSS, Angular, Symfony, WordPress" />
+    <meta name="author" content="Alice Richardeau">
+    <meta name="geo.region" content="FR">
+    <meta name="geo.placename" content="Saint-Étienne">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Alice Richardeau - développeuse web</title>
     <link rel="shortcut icon" href="./img/AR.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
@@ -22,8 +26,7 @@
         <!--###################### HEADER ###########################################################-->
         <nav>
             <a class="logo-link" href=""><img class="logo" src="./img/logo-rb-grey.png" alt="Alice Richardeau"></a>
-            <input id="menu_check" type="checkbox" class="menu_checkbox">
-            <label for="menu_check" class="menu_toogle"><img src="./img/burger-menu.svg" alt="menu"></label>
+            <a id="link" href="#"><span id="burger"></span></a>
             <ul class="menu">
                 <li><a href="">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
