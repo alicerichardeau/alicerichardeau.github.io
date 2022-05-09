@@ -28,32 +28,64 @@ const handleIntersect = function (entries, observer) {
   document.querySelectorAll('.reveal').forEach(function(r) {
     observer.observe(r)
   })
-  
+
+  // #################################################################
 
 // burger menu to cross on click
 // ##############################
 
-let link = document.getElementById('link')
-let burger = document.getElementById('burger')
-let ul = document.querySelector('.menu')
+let link = document.getElementById('link');
+let burger = document.getElementById('burger');
+let ul = document.querySelector('.menu');
+let body = document.querySelector('body');
 
-link.addEventListener('click', function() {
+// open navbar
+function openNav() {
 
-    // if menu is openned
-    if(burger.classList.contains('open')) {
+  burger.classList.add('open');
+  ul.style.display = "flex";
+  ul.classList.add('load');
+};
 
-        ul.style.display = "none";
-        burger.classList.remove("open");
-        ul.classList.remove('load')
-    }
-    // if menu is closed
-    else {
+// close navbar
+function closeNav() {
 
-        burger.classList.add('open');
-        ul.style.display = "flex";
-        ul.classList.add('load');
-    }
+  ul.style.display = "none";
+  burger.classList.remove("open");
+  ul.classList.remove('load');
+};
+
+// open or close menu on click
+function showMenu() {
+
+  link.addEventListener('click', function () {
+  
+      // if menu is openned
+      if(burger.classList.contains('open')) {
+  
+        closeNav();
+      }
+      // if menu is closed
+      else {
+        
+        openNav();
+      }
+    });
+  } 
+  
+  showMenu();
+  
+// close menu on click anywhere
+window.addEventListener('mouseup', function(event) {
+
+  if(event.target != ul) {
+
+    ul.style.display = 'none';
+    burger.classList.remove("open");
+  }
 })
+
+// ########################################################################
 
 
 //animation for title show letter by letter
@@ -79,6 +111,8 @@ function showLetters()  {
 }
 
 showLetters();
+
+// ##############################################################
 
 // change navbar on scroll
 // ########################
