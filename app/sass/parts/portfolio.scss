@@ -26,6 +26,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 1rem 0;
 
         // project card
         .achievements-card {
@@ -106,11 +107,14 @@
         }
 
         @media screen and (min-width: 650px) {
+
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+
             .achievements-card {
-               margin: 1rem;
+
+               margin: 1rem 2rem;
             }
         }
 
