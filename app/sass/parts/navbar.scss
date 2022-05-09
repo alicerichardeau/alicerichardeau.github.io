@@ -13,6 +13,7 @@ nav {
     transition: 0.8s;
 
     .menu .open {
+
         display: flex;
     }
 
@@ -31,6 +32,7 @@ nav {
         // burger menu
         // middle bar
         #burger {
+
             width: 30px;
             height: 2px;
             background: black;
@@ -42,6 +44,7 @@ nav {
         // top and bottom bars
         #burger::before,
         #burger::after {
+
             content: '';
             width: 30px;
             height: 2px;
@@ -54,27 +57,32 @@ nav {
         }
 
         #burger::before {
+
             top: -4px;
             right: 0;
 
         }
 
         #burger::after {
+
             top: 4px;
         }
 
         // on click burger menu become cross
         #burger.open {
+
             background: transparent; // middle bar
         }
 
         // change top and bottom bars to make a cross
         #burger.open::before {
+
             transform: rotate(45deg);
             top: 0;
         }
 
         #burger.open::after {
+
             transform: rotate(-45deg);
             top: 0;
         }
@@ -84,6 +92,7 @@ nav {
 
         display: flex;
         margin-left: 0.5rem;
+
         .logo {
 
             width: 60px;
@@ -104,10 +113,12 @@ nav {
     @-webkit-keyframes cssAnimation {
 
         from {
+
             opacity: 0;
         }
 
         to {
+
             opacity: 1;
         }
     }
@@ -125,7 +136,8 @@ nav {
         list-style-type: none;
         justify-content: center;
         margin: 0;
-        padding: 1rem 0;
+        padding: 2rem 0;
+        padding-top: 4rem;
         position: absolute;
         width: 100%;
         right: 0;
